@@ -10,5 +10,5 @@ void setup() {
 }
 
 FASTRUN void loop() {
-  generateSquare(9999, 50);
+  generateSine(1000);
 }

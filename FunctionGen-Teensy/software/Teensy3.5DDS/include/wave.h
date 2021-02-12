@@ -11,6 +11,10 @@
 #define MAX_VALUE 4096
 #define MAX_VALUE_HALF 2048
 
+//How much time (nanoseconds) is required for an analogWriteDAC0() call
+#define ANALOG_WRITE_TIME_NS 477
+#define ANALOG_WRITE_TIME_MS 0.5f
+
 // How much time a single clock cycle takes
 #define CLOCK_TO_NS 9
 // Overhead when counting cycles
