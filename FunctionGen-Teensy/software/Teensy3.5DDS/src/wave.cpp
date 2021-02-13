@@ -10,6 +10,10 @@ void setupWaves(){
   
   //Set DACs resolution to 12 bits
   analogWriteResolution(12);
+
+  // Enable DAC0, from framework's analogWriteDAC0, place here from higher speeds
+  SIM_SCGC2 |= SIM_SCGC2_DAC0;
+	DAC0_C0 = DAC_C0_DACEN | DAC_C0_DACRFS;
 }
 
 // Wait time by counting clock cycles

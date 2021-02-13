@@ -24,54 +24,30 @@ void calculateSineLookup(){
   }
 }
 
-/*Generate sine wave at the given frequency
-Use the classical DDS Phase Accumulator technique
-On some lower frequency the maths for the phase accumulator doesn't work (delta_phi becomes too close to zero to be noticed)
-and a simpler approach waiting microseconds can be used*/
-
+//Write the DAC with using some parts of framework's Arduino.h, for higher speeds
 // Use FASTRUN to run code in RAM
+typedef int16_t __attribute__((__may_alias__)) aliased_int16_t;
+
 FASTRUN void generateSine(float frequency){
     startGenerating();
 
-    if (frequency <= 500){
+    // Phase accumulator
+    float phase = 0;
 
-      // Period of the wave in microseconds
-      unsigned long periodMS = 1/frequency * pow (10, 6);
+    //Constrain frequency
+    frequency = constrain(frequency, 0, MAX_ACHIEVABLE_FREQ);
 
-      //Time to pass between outputting each sample
-      unsigned long sampleTime = (unsigned long) ((float)periodMS / LUT_SIZE + ANALOG_WRITE_TIME_MS);
-
-      int i = 0;
-      while(generateWave){
-        //Write the voltage on the DAC. i gets incremented after the call to the function is done
-        analogWriteDAC0(LUT[i++]);
-
-        // handle wraparound
-        if(i >= LUT_SIZE) i -= LUT_SIZE;
-
-        // Wait the needed time
-        delayMicroseconds(sampleTime);
-      }
-
-    }else{
-      // Phase accumulator
-      float phase = 0;
-
-      //Constrain frequency
-      frequency = constrain(frequency, 0, MAX_ACHIEVABLE_FREQ);
-
-      // Phase increment at each step
-      float delta_phi = (int) (frequency / SAMPLE_FREQ * LUT_SIZE); 
-      
-      while(generateWave){
-          // increment phase
-          phase += delta_phi;
-          
-          // handle wraparound           
-          if (phase >= (float)LUT_SIZE) phase -= (float)LUT_SIZE;
-          
-          //Write the voltage on the DAC
-          analogWriteDAC0(LUT[(int)phase]); 
-      }
+    // Phase increment at each step
+    float delta_phi = frequency / SAMPLE_FREQ * LUT_SIZE; 
+    
+    while(generateWave){
+        // increment phase
+        phase += delta_phi;
+        
+        // handle wraparound           
+        if (phase >= LUT_SIZE) phase -= LUT_SIZE;
+        
+        //Write the voltage on the DAC
+        *(volatile aliased_int16_t *)&(DAC0_DAT0L) = LUT[(int)phase];
     }
 }

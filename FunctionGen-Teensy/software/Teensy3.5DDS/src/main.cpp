@@ -10,5 +10,5 @@ void setup() {
 }
 
 FASTRUN void loop() {
-  generateSine(1000);
+  generateSine(1000000);
 }

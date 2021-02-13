@@ -8,8 +8,8 @@
 #define extr extern
 #endif
 
-#define MAX_VALUE 4096
-#define MAX_VALUE_HALF 2048
+#define MAX_VALUE 1024
+#define MAX_VALUE_HALF 512
 
 //How much time (nanoseconds) is required for an analogWriteDAC0() call
 #define ANALOG_WRITE_TIME_NS 477
