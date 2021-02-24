@@ -42,5 +42,4 @@ FASTRUN void generateSquare(float frequency, int duty){
           delayCycles(dutyLowCycles);
       }
     }
-
 }

@@ -12,9 +12,11 @@ void setupWaves(){
   analogWriteResolution(12);
 
   // Enable DAC0, from framework's analogWriteDAC0, place here from higher speeds
-  // Reference voltage is 1.2V
   SIM_SCGC2 |= SIM_SCGC2_DAC0;
 	DAC0_C0 = DAC_C0_DACEN | DAC_C0_DACRFS;
+  // Enable DAC0, from framework's analogWriteDAC0, place here from higher speeds
+	SIM_SCGC2 |= SIM_SCGC2_DAC1;
+	DAC1_C0 = DAC_C0_DACEN | DAC_C0_DACRFS; // 3.3V VDDA is DACREF_2
 }
 
 // Wait time by counting clock cycles
