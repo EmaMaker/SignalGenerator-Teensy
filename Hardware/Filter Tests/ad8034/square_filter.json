@@ -1,0 +1,77 @@
+{
+	"Name": "square_filter",
+	"Description": "Square wave filters to remove stabilize corners of square waves. Choosen to use the same OpAmps as sine filter and only use 3 chips in all the chain",
+	"Tool": "FW",
+	"Version": "1.1",
+	"Design": {
+		"visitedTabs": [
+			"filter-type",
+			"specifications",
+			"components",
+			"tolerances"
+		],
+		"filterType": "lowPass",
+		"specifications": {
+			"gain": 0,
+			"gainUnit": "dB",
+			"passbandAttenuation": -3,
+			"passbandFrequency": 4000000,
+			"stopbandAttenuation": -40,
+			"stopbandFrequency": 15000000,
+			"filterResponseValue": 0,
+			"filterResponseSlider": "100",
+			"centerFrequency": null
+		},
+		"components": {
+			"vsPlus": 12,
+			"vsMinus": -12,
+			"optimization": "Power",
+			"optimizationPreference": "nonSpecific",
+			"compensateForGbw": false,
+			"stages": [
+				{
+					"stageLetter": "A",
+					"componentSizing": 48,
+					"gain": 164,
+					"gainEnabled": false,
+					"implementation": "sallenKey",
+					"opAmps": "AD8034"
+				},
+				{
+					"stageLetter": "B",
+					"componentSizing": 48,
+					"gain": 164,
+					"gainEnabled": false,
+					"implementation": "sallenKey",
+					"opAmps": "AD8034"
+				},
+				{
+					"stageLetter": "C",
+					"componentSizing": 48,
+					"gain": 164,
+					"gainEnabled": false,
+					"implementation": "sallenKey",
+					"opAmps": "AD8034"
+				}
+			],
+			"recommendedAmps": [],
+			"sortOrder": [
+				0,
+				1,
+				2
+			]
+		},
+		"tolerances": {
+			"resistorTolerance": "1%",
+			"capacitorTolerance": "5%",
+			"inductorTolerance": "5%",
+			"opAmpGbwTolerance": "20%",
+			"resistorPreferredSeries": "E96",
+			"capacitorPreferredSeries": "E24",
+			"inductorPreferredSeries": "E12"
+		},
+		"nextSteps": {}
+	},
+	"CreatedDate": "2021-03-03 06:01:55 PM",
+	"UpdatedDate": "2021-03-03 06:01:55 PM"
+}

@@ -1,0 +1,77 @@
+{
+	"Name": "sine_filter",
+	"Description": "Filter for sine waves and other non-square waves. Optimized for future tests past 1MHz and to only use 3OpAmps in all the chain",
+	"Tool": "FW",
+	"Version": "1.1",
+	"Design": {
+		"visitedTabs": [
+			"filter-type",
+			"specifications",
+			"components",
+			"tolerances"
+		],
+		"filterType": "lowPass",
+		"specifications": {
+			"gain": 0,
+			"gainUnit": "dB",
+			"passbandAttenuation": -3,
+			"passbandFrequency": 1500000,
+			"stopbandAttenuation": -60,
+			"stopbandFrequency": 5000000,
+			"filterResponseValue": 0,
+			"filterResponseSlider": 50,
+			"centerFrequency": null
+		},
+		"components": {
+			"vsPlus": 12,
+			"vsMinus": -12,
+			"optimization": "Power",
+			"optimizationPreference": "nonSpecific",
+			"compensateForGbw": false,
+			"stages": [
+				{
+					"stageLetter": "A",
+					"componentSizing": 52,
+					"gain": 164,
+					"gainEnabled": false,
+					"implementation": "sallenKey",
+					"opAmps": "AD8034"
+				},
+				{
+					"stageLetter": "B",
+					"componentSizing": 48,
+					"gain": 164,
+					"gainEnabled": false,
+					"implementation": "sallenKey",
+					"opAmps": "AD8034"
+				},
+				{
+					"stageLetter": "C",
+					"componentSizing": 48,
+					"gain": 164,
+					"gainEnabled": false,
+					"implementation": "sallenKey",
+					"opAmps": "AD8034"
+				}
+			],
+			"recommendedAmps": [],
+			"sortOrder": [
+				0,
+				1,
+				2
+			]
+		},
+		"tolerances": {
+			"resistorTolerance": "1%",
+			"capacitorTolerance": "5%",
+			"inductorTolerance": "5%",
+			"opAmpGbwTolerance": "20%",
+			"resistorPreferredSeries": "E96",
+			"capacitorPreferredSeries": "E24",
+			"inductorPreferredSeries": "E12"
+		},
+		"nextSteps": {}
+	},
+	"CreatedDate": "2021-03-03 05:54:32 PM",
+	"UpdatedDate": "2021-03-03 05:54:32 PM"
+}
