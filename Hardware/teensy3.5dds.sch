@@ -24725,6 +24725,18 @@ R10 AND R11 CALIBRATED TO OFFER A 1/5 RATIO</text>
 <wire x1="276.86" y1="-116.84" x2="281.94" y2="-116.84" width="0.1524" layer="91"/>
 </segment>
 </net>
+<net name="INTERRUPT" class="0">
+<segment>
+<pinref part="U$2" gate="G$1" pin="PD4(ICP1/ADC8)"/>
+<wire x1="63.5" y1="-154.94" x2="78.74" y2="-154.94" width="0.1524" layer="91"/>
+<label x="66.04" y="-154.94" size="1.778" layer="95"/>
+</segment>
+<segment>
+<pinref part="U$1" gate="G$1" pin="37/A18"/>
+<wire x1="20.32" y1="-35.56" x2="38.1" y2="-35.56" width="0.1524" layer="91"/>
+<label x="22.86" y="-35.56" size="1.778" layer="95"/>
+</segment>
+</net>
 </nets>
 </sheet>
 </sheets>

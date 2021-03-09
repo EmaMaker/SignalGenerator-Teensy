@@ -3689,6 +3689,11 @@ design rules under a new name.</description>
 <wire x1="-60.01" y1="-483.87" x2="-34.925" y2="-426.66" width="0" layer="19" extent="1-1"/>
 <wire x1="-61.91" y1="-488.95" x2="-60.01" y2="-483.87" width="0" layer="19" extent="1-1"/>
 </signal>
+<signal name="INTERRUPT">
+<contactref element="U$2" pad="25"/>
+<contactref element="U$1" pad="37/A18"/>
+<wire x1="14.211" y1="26.755" x2="22.86" y2="45.72" width="0" layer="19" extent="1-1"/>
+</signal>
 </signals>
 <mfgpreviewcolors>
 <mfgpreviewcolor name="soldermaskcolor" color="0xC8008000"/>

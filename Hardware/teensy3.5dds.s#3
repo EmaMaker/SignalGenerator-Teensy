@@ -22902,7 +22902,7 @@ Source: http://www.diodes.com/datasheets/ds23001.pdf</description>
 <attribute name="VALUE" x="127" y="-147.32" size="1.778" layer="96"/>
 </instance>
 <instance part="Q2" gate="G$1" x="158.75" y="-83.82" smashed="yes">
-<attribute name="NAME" x="148.59" y="-81.28" size="1.778" layer="95"/>
+<attribute name="NAME" x="161.29" y="-83.82" size="1.778" layer="95"/>
 <attribute name="VALUE" x="148.59" y="-78.74" size="1.778" layer="96"/>
 </instance>
 <instance part="U$3" gate="G$1" x="176.53" y="-93.98" smashed="yes">
@@ -22919,7 +22919,7 @@ Source: http://www.diodes.com/datasheets/ds23001.pdf</description>
 <attribute name="VALUE" x="158.75" y="-69.85" size="1.778" layer="96" rot="R90"/>
 </instance>
 <instance part="Q3" gate="G$1" x="158.75" y="-129.54" smashed="yes">
-<attribute name="NAME" x="148.59" y="-127" size="1.778" layer="95"/>
+<attribute name="NAME" x="161.29" y="-129.54" size="1.778" layer="95"/>
 <attribute name="VALUE" x="148.59" y="-124.46" size="1.778" layer="96"/>
 </instance>
 <instance part="R19" gate="G$1" x="161.29" y="-119.38" smashed="yes" rot="R90">
@@ -23933,9 +23933,9 @@ Source: http://www.diodes.com/datasheets/ds23001.pdf</description>
 </net>
 <net name="OUTPUTS" class="0">
 <segment>
-<wire x1="139.7" y1="-60.96" x2="322.58" y2="-60.96" width="0.1524" layer="91"/>
-<wire x1="322.58" y1="-60.96" x2="322.58" y2="-154.94" width="0.1524" layer="91"/>
-<wire x1="322.58" y1="-154.94" x2="139.7" y2="-154.94" width="0.1524" layer="91"/>
+<wire x1="139.7" y1="-60.96" x2="325.12" y2="-60.96" width="0.1524" layer="91"/>
+<wire x1="325.12" y1="-60.96" x2="325.12" y2="-154.94" width="0.1524" layer="91"/>
+<wire x1="325.12" y1="-154.94" x2="139.7" y2="-154.94" width="0.1524" layer="91"/>
 <wire x1="139.7" y1="-154.94" x2="139.7" y2="-60.96" width="0.1524" layer="91"/>
 <label x="139.7" y="-157.48" size="1.778" layer="95"/>
 </segment>
