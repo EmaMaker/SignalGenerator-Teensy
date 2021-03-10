@@ -10,5 +10,4 @@
 #define MAX_ACHIEVABLE_FREQ 1000000
 
 void generateSine(float);
-void generateSines(float, float);
 void setupSine();
