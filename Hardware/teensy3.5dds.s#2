@@ -23021,8 +23021,10 @@ Source: &lt;a href="https://componentsearchengine.com/Datasheets/1/AD737KRZ-R7.p
 <text x="-27.94" y="-231.14" size="1.778" layer="91">PLACE ONE CLOSE TO EACH OPAMP AND AD737 IC SUPPLY</text>
 <text x="218.44" y="-154.94" size="1.778" layer="91">R4 AND R5 CALIBRATED TO OUTPUT 2.5V
 R6 AND R7 CALIBRATED TO OFFER A 1/5 RATIO</text>
-<text x="299.72" y="-154.94" size="1.778" layer="91">R8 AND R9 CALIBRATED TO OUTPUT 2.5V
+<text x="294.64" y="-154.94" size="1.778" layer="91">R8 AND R9 CALIBRATED TO OUTPUT 2.5V
 R10 AND R11 CALIBRATED TO OFFER A 1/5 RATIO</text>
+<text x="-27.94" y="-55.88" size="1.778" layer="91">PULL_UP RESISTOR ON INTERRUPT IS ENABLED
+IN SOFTWARE (PINMODE INPUT_PULLUP)</text>
 </plain>
 <instances>
 <instance part="U$1" gate="G$1" x="0" y="0" smashed="yes"/>
@@ -23138,8 +23140,8 @@ R10 AND R11 CALIBRATED TO OFFER A 1/5 RATIO</text>
 <attribute name="VALUE" x="295.91" y="-180.34" size="1.778" layer="96"/>
 <attribute name="NAME" x="295.91" y="-164.338" size="1.778" layer="95"/>
 </instance>
-<instance part="X1" gate="G$1" x="352.806" y="-81.28" smashed="yes" rot="MR0">
-<attribute name="NAME" x="355.346" y="-77.978" size="1.778" layer="95" rot="MR0"/>
+<instance part="X1" gate="G$1" x="347.726" y="-81.28" smashed="yes" rot="MR0">
+<attribute name="NAME" x="350.266" y="-77.978" size="1.778" layer="95" rot="MR0"/>
 </instance>
 <instance part="IC8" gate="A" x="66.04" y="17.78" smashed="yes" rot="MR180">
 <attribute name="NAME" x="68.58" y="14.605" size="1.778" layer="95" rot="MR180"/>
@@ -23401,9 +23403,9 @@ R10 AND R11 CALIBRATED TO OFFER A 1/5 RATIO</text>
 <attribute name="NAME" x="246.38" y="-86.995" size="1.778" layer="95" rot="MR180"/>
 <attribute name="VALUE" x="243.84" y="-78.74" size="1.778" layer="96" rot="MR180"/>
 </instance>
-<instance part="IC1" gate="B" x="329.946" y="-81.28" smashed="yes" rot="MR180">
-<attribute name="NAME" x="332.486" y="-84.455" size="1.778" layer="95" rot="MR180"/>
-<attribute name="VALUE" x="329.946" y="-76.2" size="1.778" layer="96" rot="MR180"/>
+<instance part="IC1" gate="B" x="324.866" y="-81.28" smashed="yes" rot="MR180">
+<attribute name="NAME" x="327.406" y="-84.455" size="1.778" layer="95" rot="MR180"/>
+<attribute name="VALUE" x="324.866" y="-76.2" size="1.778" layer="96" rot="MR180"/>
 </instance>
 <instance part="IC2" gate="A" x="243.84" y="-116.84" smashed="yes" rot="MR180">
 <attribute name="NAME" x="246.38" y="-120.015" size="1.778" layer="95" rot="MR180"/>
@@ -23446,8 +23448,8 @@ R10 AND R11 CALIBRATED TO OFFER A 1/5 RATIO</text>
 <attribute name="NAME" x="245.11" y="-105.6386" size="1.778" layer="95" rot="R180"/>
 <attribute name="VALUE" x="247.65" y="-105.918" size="1.778" layer="96" rot="R180"/>
 </instance>
-<instance part="GND7" gate="1" x="347.726" y="-88.9" smashed="yes">
-<attribute name="VALUE" x="345.186" y="-91.44" size="1.778" layer="96"/>
+<instance part="GND7" gate="1" x="342.646" y="-88.9" smashed="yes">
+<attribute name="VALUE" x="340.106" y="-91.44" size="1.778" layer="96"/>
 </instance>
 <instance part="C9" gate="G$1" x="27.94" y="-200.66" smashed="yes">
 <attribute name="NAME" x="29.464" y="-200.279" size="1.778" layer="95"/>
@@ -23482,25 +23484,25 @@ R10 AND R11 CALIBRATED TO OFFER A 1/5 RATIO</text>
 <instance part="GND9" gate="1" x="-12.7" y="-96.52" smashed="yes">
 <attribute name="VALUE" x="-15.24" y="-99.06" size="1.778" layer="96"/>
 </instance>
-<instance part="IC3" gate="B" x="327.66" y="-114.3" smashed="yes" rot="MR180">
-<attribute name="NAME" x="330.2" y="-117.475" size="1.778" layer="95" rot="MR180"/>
-<attribute name="VALUE" x="328.93" y="-110.49" size="1.778" layer="96" rot="MR180"/>
+<instance part="IC3" gate="B" x="318.77" y="-114.3" smashed="yes" rot="MR180">
+<attribute name="NAME" x="321.31" y="-117.475" size="1.778" layer="95" rot="MR180"/>
+<attribute name="VALUE" x="320.04" y="-110.49" size="1.778" layer="96" rot="MR180"/>
 </instance>
-<instance part="R8" gate="G$1" x="307.34" y="-124.46" smashed="yes" rot="R270">
-<attribute name="NAME" x="308.61" y="-122.9614" size="1.778" layer="95"/>
-<attribute name="VALUE" x="304.038" y="-120.65" size="1.778" layer="96" rot="R270"/>
+<instance part="R8" gate="G$1" x="302.26" y="-124.46" smashed="yes" rot="R270">
+<attribute name="NAME" x="303.53" y="-122.9614" size="1.778" layer="95"/>
+<attribute name="VALUE" x="298.958" y="-120.65" size="1.778" layer="96" rot="R270"/>
 </instance>
-<instance part="R9" gate="G$1" x="307.34" y="-139.7" smashed="yes" rot="R270">
-<attribute name="NAME" x="308.61" y="-138.2014" size="1.778" layer="95"/>
-<attribute name="VALUE" x="304.038" y="-135.89" size="1.778" layer="96" rot="R270"/>
+<instance part="R9" gate="G$1" x="302.26" y="-139.7" smashed="yes" rot="R270">
+<attribute name="NAME" x="303.53" y="-138.2014" size="1.778" layer="95"/>
+<attribute name="VALUE" x="298.958" y="-135.89" size="1.778" layer="96" rot="R270"/>
 </instance>
-<instance part="R10" gate="G$1" x="306.324" y="-111.76" smashed="yes" rot="R180">
-<attribute name="NAME" x="310.134" y="-113.2586" size="1.778" layer="95" rot="R180"/>
-<attribute name="VALUE" x="310.134" y="-108.458" size="1.778" layer="96" rot="R180"/>
+<instance part="R10" gate="G$1" x="304.8" y="-105.41" smashed="yes" rot="R270">
+<attribute name="NAME" x="307.086" y="-102.8954" size="1.778" layer="95"/>
+<attribute name="VALUE" x="301.498" y="-101.6" size="1.778" layer="96" rot="R270"/>
 </instance>
-<instance part="R11" gate="G$1" x="326.39" y="-106.68" smashed="yes">
-<attribute name="NAME" x="322.58" y="-105.1814" size="1.778" layer="95"/>
-<attribute name="VALUE" x="322.58" y="-109.982" size="1.778" layer="96"/>
+<instance part="R11" gate="G$1" x="314.96" y="-106.68" smashed="yes">
+<attribute name="NAME" x="311.15" y="-105.1814" size="1.778" layer="95"/>
+<attribute name="VALUE" x="311.15" y="-109.982" size="1.778" layer="96"/>
 </instance>
 <instance part="IC4" gate="G$1" x="259.08" y="-93.98" smashed="yes">
 <attribute name="NAME" x="293.37" y="-86.36" size="1.778" layer="95" align="center-left"/>
@@ -23619,8 +23621,8 @@ R10 AND R11 CALIBRATED TO OFFER A 1/5 RATIO</text>
 </segment>
 <segment>
 <pinref part="X1" gate="G$1" pin="2"/>
-<wire x1="350.266" y1="-83.82" x2="347.726" y2="-83.82" width="0.1524" layer="91"/>
-<wire x1="347.726" y1="-83.82" x2="347.726" y2="-86.36" width="0.1524" layer="91"/>
+<wire x1="345.186" y1="-83.82" x2="342.646" y2="-83.82" width="0.1524" layer="91"/>
+<wire x1="342.646" y1="-83.82" x2="342.646" y2="-86.36" width="0.1524" layer="91"/>
 <pinref part="GND7" gate="1" pin="GND"/>
 </segment>
 <segment>
@@ -23883,8 +23885,8 @@ R10 AND R11 CALIBRATED TO OFFER A 1/5 RATIO</text>
 </segment>
 <segment>
 <pinref part="R9" gate="G$1" pin="2"/>
-<wire x1="307.34" y1="-144.78" x2="302.26" y2="-144.78" width="0.1524" layer="91"/>
-<label x="302.26" y="-144.78" size="1.778" layer="95"/>
+<wire x1="302.26" y1="-144.78" x2="297.18" y2="-144.78" width="0.1524" layer="91"/>
+<label x="297.18" y="-144.78" size="1.778" layer="95"/>
 </segment>
 <segment>
 <pinref part="IC4" gate="G$1" pin="-VS"/>
@@ -24273,20 +24275,20 @@ R10 AND R11 CALIBRATED TO OFFER A 1/5 RATIO</text>
 </segment>
 <segment>
 <pinref part="R11" gate="G$1" pin="2"/>
-<wire x1="331.47" y1="-106.68" x2="339.09" y2="-106.68" width="0.1524" layer="91"/>
+<wire x1="320.04" y1="-106.68" x2="330.2" y2="-106.68" width="0.1524" layer="91"/>
 <pinref part="IC3" gate="B" pin="OUT"/>
-<wire x1="335.28" y1="-114.3" x2="339.09" y2="-114.3" width="0.1524" layer="91"/>
-<wire x1="339.09" y1="-114.3" x2="339.09" y2="-106.68" width="0.1524" layer="91"/>
-<wire x1="339.09" y1="-114.3" x2="349.25" y2="-114.3" width="0.1524" layer="91"/>
-<junction x="339.09" y="-114.3"/>
-<label x="341.63" y="-114.3" size="1.778" layer="95"/>
+<wire x1="326.39" y1="-114.3" x2="330.2" y2="-114.3" width="0.1524" layer="91"/>
+<wire x1="330.2" y1="-114.3" x2="330.2" y2="-106.68" width="0.1524" layer="91"/>
+<wire x1="330.2" y1="-114.3" x2="345.44" y2="-114.3" width="0.1524" layer="91"/>
+<junction x="330.2" y="-114.3"/>
+<label x="332.74" y="-114.3" size="1.778" layer="95"/>
 </segment>
 </net>
 <net name="OUTPUTS" class="0">
 <segment>
-<wire x1="129.54" y1="-60.96" x2="363.22" y2="-60.96" width="0.1524" layer="91"/>
-<wire x1="363.22" y1="-60.96" x2="363.22" y2="-154.94" width="0.1524" layer="91"/>
-<wire x1="363.22" y1="-154.94" x2="129.54" y2="-154.94" width="0.1524" layer="91"/>
+<wire x1="129.54" y1="-60.96" x2="355.6" y2="-60.96" width="0.1524" layer="91"/>
+<wire x1="355.6" y1="-60.96" x2="355.6" y2="-154.94" width="0.1524" layer="91"/>
+<wire x1="355.6" y1="-154.94" x2="129.54" y2="-154.94" width="0.1524" layer="91"/>
 <wire x1="129.54" y1="-154.94" x2="129.54" y2="-60.96" width="0.1524" layer="91"/>
 <label x="129.54" y="-157.48" size="1.778" layer="95"/>
 </segment>
@@ -24736,7 +24738,7 @@ R10 AND R11 CALIBRATED TO OFFER A 1/5 RATIO</text>
 <wire x1="248.92" y1="-73.66" x2="254" y2="-73.66" width="0.1524" layer="91"/>
 <junction x="248.92" y="-73.66"/>
 <pinref part="IC1" gate="B" pin="+IN"/>
-<wire x1="254" y1="-83.82" x2="322.326" y2="-83.82" width="0.1524" layer="91"/>
+<wire x1="254" y1="-83.82" x2="317.246" y2="-83.82" width="0.1524" layer="91"/>
 <junction x="254" y="-83.82"/>
 <pinref part="IC4" gate="G$1" pin="VIN"/>
 <wire x1="259.08" y1="-96.52" x2="254" y2="-96.52" width="0.1524" layer="91"/>
@@ -24746,14 +24748,14 @@ R10 AND R11 CALIBRATED TO OFFER A 1/5 RATIO</text>
 <net name="N$6" class="0">
 <segment>
 <pinref part="IC1" gate="B" pin="-IN"/>
-<wire x1="322.326" y1="-78.74" x2="319.786" y2="-78.74" width="0.1524" layer="91"/>
-<wire x1="319.786" y1="-78.74" x2="319.786" y2="-73.66" width="0.1524" layer="91"/>
-<wire x1="319.786" y1="-73.66" x2="340.106" y2="-73.66" width="0.1524" layer="91"/>
-<wire x1="340.106" y1="-73.66" x2="340.106" y2="-81.28" width="0.1524" layer="91"/>
+<wire x1="317.246" y1="-78.74" x2="314.706" y2="-78.74" width="0.1524" layer="91"/>
+<wire x1="314.706" y1="-78.74" x2="314.706" y2="-73.66" width="0.1524" layer="91"/>
+<wire x1="314.706" y1="-73.66" x2="335.026" y2="-73.66" width="0.1524" layer="91"/>
+<wire x1="335.026" y1="-73.66" x2="335.026" y2="-81.28" width="0.1524" layer="91"/>
 <pinref part="IC1" gate="B" pin="OUT"/>
-<wire x1="340.106" y1="-81.28" x2="337.566" y2="-81.28" width="0.1524" layer="91"/>
-<wire x1="340.106" y1="-81.28" x2="350.266" y2="-81.28" width="0.1524" layer="91"/>
-<junction x="340.106" y="-81.28"/>
+<wire x1="335.026" y1="-81.28" x2="332.486" y2="-81.28" width="0.1524" layer="91"/>
+<wire x1="335.026" y1="-81.28" x2="345.186" y2="-81.28" width="0.1524" layer="91"/>
+<junction x="335.026" y="-81.28"/>
 <pinref part="X1" gate="G$1" pin="1"/>
 </segment>
 </net>
@@ -24829,45 +24831,45 @@ R10 AND R11 CALIBRATED TO OFFER A 1/5 RATIO</text>
 <junction x="165.1" y="-132.08"/>
 </segment>
 </net>
-<net name="N$14" class="0">
-<segment>
-<pinref part="IC4" gate="G$1" pin="OUTPUT"/>
-<wire x1="297.18" y1="-99.06" x2="299.72" y2="-99.06" width="0.1524" layer="91"/>
-<pinref part="R10" gate="G$1" pin="2"/>
-<wire x1="301.244" y1="-111.76" x2="299.72" y2="-111.76" width="0.1524" layer="91"/>
-<wire x1="299.72" y1="-111.76" x2="299.72" y2="-99.06" width="0.1524" layer="91"/>
-</segment>
-</net>
 <net name="N$16" class="0">
 <segment>
-<pinref part="R10" gate="G$1" pin="1"/>
+<pinref part="R10" gate="G$1" pin="2"/>
 <pinref part="IC3" gate="B" pin="-IN"/>
-<wire x1="311.404" y1="-111.76" x2="313.69" y2="-111.76" width="0.1524" layer="91"/>
+<wire x1="304.8" y1="-110.49" x2="304.8" y2="-111.76" width="0.1524" layer="91"/>
+<wire x1="304.8" y1="-111.76" x2="308.61" y2="-111.76" width="0.1524" layer="91"/>
 <pinref part="R11" gate="G$1" pin="1"/>
-<wire x1="313.69" y1="-111.76" x2="320.04" y2="-111.76" width="0.1524" layer="91"/>
-<wire x1="313.69" y1="-111.76" x2="313.69" y2="-106.68" width="0.1524" layer="91"/>
-<wire x1="313.69" y1="-106.68" x2="321.31" y2="-106.68" width="0.1524" layer="91"/>
-<junction x="313.69" y="-111.76"/>
+<wire x1="308.61" y1="-111.76" x2="311.15" y2="-111.76" width="0.1524" layer="91"/>
+<wire x1="309.88" y1="-106.68" x2="308.61" y2="-106.68" width="0.1524" layer="91"/>
+<wire x1="308.61" y1="-106.68" x2="308.61" y2="-111.76" width="0.1524" layer="91"/>
+<junction x="308.61" y="-111.76"/>
 </segment>
 </net>
 <net name="V*" class="0">
 <segment>
 <pinref part="R8" gate="G$1" pin="1"/>
-<wire x1="307.34" y1="-119.38" x2="302.26" y2="-119.38" width="0.1524" layer="91"/>
-<label x="302.26" y="-119.38" size="1.778" layer="95"/>
+<wire x1="302.26" y1="-119.38" x2="297.18" y2="-119.38" width="0.1524" layer="91"/>
+<label x="297.18" y="-119.38" size="1.778" layer="95"/>
 </segment>
 </net>
 <net name="N$22" class="0">
 <segment>
 <pinref part="R9" gate="G$1" pin="1"/>
 <pinref part="R8" gate="G$1" pin="2"/>
-<wire x1="307.34" y1="-134.62" x2="307.34" y2="-132.08" width="0.1524" layer="91"/>
-<wire x1="307.34" y1="-132.08" x2="307.34" y2="-129.54" width="0.1524" layer="91"/>
-<wire x1="307.34" y1="-132.08" x2="314.96" y2="-132.08" width="0.1524" layer="91"/>
-<wire x1="314.96" y1="-132.08" x2="314.96" y2="-116.84" width="0.1524" layer="91"/>
-<junction x="307.34" y="-132.08"/>
+<wire x1="302.26" y1="-134.62" x2="302.26" y2="-132.08" width="0.1524" layer="91"/>
+<wire x1="302.26" y1="-132.08" x2="302.26" y2="-129.54" width="0.1524" layer="91"/>
+<wire x1="302.26" y1="-132.08" x2="307.34" y2="-132.08" width="0.1524" layer="91"/>
+<junction x="302.26" y="-132.08"/>
 <pinref part="IC3" gate="B" pin="+IN"/>
-<wire x1="314.96" y1="-116.84" x2="320.04" y2="-116.84" width="0.1524" layer="91"/>
+<wire x1="311.15" y1="-116.84" x2="307.34" y2="-116.84" width="0.1524" layer="91"/>
+<wire x1="307.34" y1="-116.84" x2="307.34" y2="-132.08" width="0.1524" layer="91"/>
+</segment>
+</net>
+<net name="N$14" class="0">
+<segment>
+<pinref part="IC4" gate="G$1" pin="OUTPUT"/>
+<pinref part="R10" gate="G$1" pin="1"/>
+<wire x1="297.18" y1="-99.06" x2="304.8" y2="-99.06" width="0.1524" layer="91"/>
+<wire x1="304.8" y1="-99.06" x2="304.8" y2="-100.33" width="0.1524" layer="91"/>
 </segment>
 </net>
 </nets>

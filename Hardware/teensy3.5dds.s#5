@@ -6,7 +6,7 @@
 <setting alwaysvectorfont="no"/>
 <setting verticaltext="up"/>
 </settings>
-<grid distance="0.1" unitdist="inch" unit="inch" style="lines" multiple="1" display="yes" altdistance="0.05" altunitdist="inch" altunit="inch"/>
+<grid distance="0.1" unitdist="inch" unit="inch" style="lines" multiple="1" display="no" altdistance="0.01" altunitdist="inch" altunit="inch"/>
 <layers>
 <layer number="1" name="Top" color="4" fill="1" visible="no" active="no"/>
 <layer number="2" name="Route2" color="1" fill="3" visible="no" active="no"/>
@@ -22925,15 +22925,16 @@ Source: http://www.diodes.com/datasheets/ds23001.pdf</description>
 <part name="P+6" library="supply1" library_urn="urn:adsk.eagle:library:371" deviceset="V+" device=""/>
 <part name="R12" library="rcl" library_urn="urn:adsk.eagle:library:334" deviceset="R-EU_" device="M0805" package3d_urn="urn:adsk.eagle:package:23556/2"/>
 <part name="R13" library="rcl" library_urn="urn:adsk.eagle:library:334" deviceset="R-EU_" device="M0805" package3d_urn="urn:adsk.eagle:package:23556/2"/>
+<part name="GND9" library="supply1" library_urn="urn:adsk.eagle:library:371" deviceset="GND" device=""/>
 </parts>
 <sheets>
 <sheet>
 <plain>
 <text x="-30.48" y="-236.22" size="1.778" layer="91">DECOUPLING CAPS</text>
 <text x="-27.94" y="-231.14" size="1.778" layer="91">PLACE ONE CLOSE TO EACH OPAMP IC SUPPLY</text>
-<text x="223.52" y="-154.94" size="1.778" layer="91">R4 AND R5 CALIBRATED TO OUTPUT 2.5V
+<text x="218.44" y="-154.94" size="1.778" layer="91">R4 AND R5 CALIBRATED TO OUTPUT 2.5V
 R6 AND R7CALIBRATED TO OFFER A 1/5 RATIO</text>
-<text x="284.48" y="-154.94" size="1.778" layer="91">R8 AND R9 CALIBRATED TO OUTPUT 2.5V
+<text x="281.94" y="-154.94" size="1.778" layer="91">R8 AND R9 CALIBRATED TO OUTPUT 2.5V
 R10 AND R11 CALIBRATED TO OFFER A 1/5 RATIO</text>
 </plain>
 <instances>
@@ -23422,6 +23423,9 @@ R10 AND R11 CALIBRATED TO OFFER A 1/5 RATIO</text>
 <attribute name="NAME" x="148.59" y="-138.2014" size="1.778" layer="95"/>
 <attribute name="VALUE" x="148.59" y="-143.002" size="1.778" layer="96"/>
 </instance>
+<instance part="GND9" gate="1" x="-12.7" y="-96.52" smashed="yes">
+<attribute name="VALUE" x="-15.24" y="-99.06" size="1.778" layer="96"/>
+</instance>
 </instances>
 <busses>
 </busses>
@@ -23613,6 +23617,22 @@ R10 AND R11 CALIBRATED TO OFFER A 1/5 RATIO</text>
 <pinref part="GND15" gate="1" pin="GND"/>
 <pinref part="Q2" gate="G$1" pin="E"/>
 <wire x1="165.1" y1="-104.14" x2="165.1" y2="-101.6" width="0.1524" layer="91"/>
+</segment>
+<segment>
+<pinref part="LED_ON" gate="G$1" pin="C"/>
+<pinref part="RESET" gate="G$1" pin="P$1"/>
+<wire x1="-17.78" y1="-90.17" x2="-17.78" y2="-91.44" width="0.1524" layer="91"/>
+<wire x1="-17.78" y1="-91.44" x2="-12.7" y2="-91.44" width="0.1524" layer="91"/>
+<pinref part="C7" gate="G$1" pin="2"/>
+<wire x1="-12.7" y1="-91.44" x2="-5.08" y2="-91.44" width="0.1524" layer="91"/>
+<wire x1="-5.08" y1="-91.44" x2="-2.54" y2="-91.44" width="0.1524" layer="91"/>
+<wire x1="-12.7" y1="-83.82" x2="-12.7" y2="-91.44" width="0.1524" layer="91"/>
+<junction x="-12.7" y="-91.44"/>
+<pinref part="C8" gate="G$1" pin="-"/>
+<wire x1="-5.08" y1="-83.82" x2="-5.08" y2="-91.44" width="0.1524" layer="91"/>
+<junction x="-5.08" y="-91.44"/>
+<pinref part="GND9" gate="1" pin="GND"/>
+<wire x1="-12.7" y1="-93.98" x2="-12.7" y2="-91.44" width="0.1524" layer="91"/>
 </segment>
 </net>
 <net name="DAC0" class="0">
@@ -24038,22 +24058,6 @@ R10 AND R11 CALIBRATED TO OFFER A 1/5 RATIO</text>
 <wire x1="-17.78" y1="-80.01" x2="-17.78" y2="-82.55" width="0.1524" layer="91"/>
 </segment>
 </net>
-<net name="N$33" class="0">
-<segment>
-<pinref part="LED_ON" gate="G$1" pin="C"/>
-<pinref part="RESET" gate="G$1" pin="P$1"/>
-<wire x1="-17.78" y1="-90.17" x2="-17.78" y2="-91.44" width="0.1524" layer="91"/>
-<wire x1="-17.78" y1="-91.44" x2="-12.7" y2="-91.44" width="0.1524" layer="91"/>
-<pinref part="C7" gate="G$1" pin="2"/>
-<wire x1="-12.7" y1="-91.44" x2="-5.08" y2="-91.44" width="0.1524" layer="91"/>
-<wire x1="-5.08" y1="-91.44" x2="-2.54" y2="-91.44" width="0.1524" layer="91"/>
-<wire x1="-12.7" y1="-83.82" x2="-12.7" y2="-91.44" width="0.1524" layer="91"/>
-<junction x="-12.7" y="-91.44"/>
-<pinref part="C8" gate="G$1" pin="-"/>
-<wire x1="-5.08" y1="-83.82" x2="-5.08" y2="-91.44" width="0.1524" layer="91"/>
-<junction x="-5.08" y="-91.44"/>
-</segment>
-</net>
 <net name="N$35" class="0">
 <segment>
 <pinref part="RESET" gate="G$1" pin="P$2"/>
@@ -24156,7 +24160,7 @@ R10 AND R11 CALIBRATED TO OFFER A 1/5 RATIO</text>
 <wire x1="256.54" y1="-116.84" x2="251.46" y2="-116.84" width="0.1524" layer="91"/>
 <wire x1="256.54" y1="-116.84" x2="266.7" y2="-116.84" width="0.1524" layer="91"/>
 <junction x="256.54" y="-116.84"/>
-<label x="256.54" y="-116.84" size="1.778" layer="95"/>
+<label x="259.08" y="-116.84" size="1.778" layer="95"/>
 </segment>
 </net>
 <net name="AMPL_MEASURE" class="0">
