@@ -26842,9 +26842,9 @@ IN SOFTWARE (PINMODE INPUT_PULLUP)</text>
 <label x="66.04" y="-160.02" size="1.778" layer="95"/>
 </segment>
 <segment>
-<pinref part="U$1" gate="G$1" pin="33/A14"/>
-<wire x1="20.32" y1="-45.72" x2="27.94" y2="-45.72" width="0.1524" layer="91"/>
-<label x="22.86" y="-45.72" size="1.778" layer="95"/>
+<pinref part="U$1" gate="G$1" pin="32/A13"/>
+<wire x1="-20.32" y1="-45.72" x2="-25.4" y2="-45.72" width="0.1524" layer="91"/>
+<label x="-25.4" y="-45.72" size="1.778" layer="95"/>
 </segment>
 </net>
 <net name="TX1" class="1">
@@ -26854,9 +26854,9 @@ IN SOFTWARE (PINMODE INPUT_PULLUP)</text>
 <label x="66.04" y="-157.48" size="1.778" layer="95"/>
 </segment>
 <segment>
-<pinref part="U$1" gate="G$1" pin="34/A15"/>
-<wire x1="20.32" y1="-43.18" x2="27.94" y2="-43.18" width="0.1524" layer="91"/>
-<label x="22.86" y="-43.18" size="1.778" layer="95"/>
+<pinref part="U$1" gate="G$1" pin="31/A12"/>
+<wire x1="-20.32" y1="-43.18" x2="-25.4" y2="-43.18" width="0.1524" layer="91"/>
+<label x="-25.4" y="-43.18" size="1.778" layer="95"/>
 </segment>
 </net>
 <net name="N$1" class="1">

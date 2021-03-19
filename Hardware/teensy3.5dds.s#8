@@ -25513,7 +25513,7 @@ Source: www.kingbright.com</description>
 </class>
 <class number="1" name="signal" width="0.254" drill="0">
 </class>
-<class number="2" name="supply" width="0.762" drill="0">
+<class number="2" name="supply" width="0.381" drill="0">
 </class>
 </classes>
 <parts>

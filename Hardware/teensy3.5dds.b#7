@@ -3312,9 +3312,8 @@ Please make sure your boards conform to these design rules.
 <contactref element="U$1" pad="21/DAC0"/>
 <contactref element="IC8" pad="3"/>
 <wire x1="43.688" y1="96.774" x2="43.688" y2="90.932" width="0.254" layer="1"/>
-<wire x1="45.72" y1="88.9" x2="68.519996875" y2="88.9" width="0.254" layer="1"/>
 <wire x1="43.688" y1="90.932" x2="45.72" y2="88.9" width="0.254" layer="1"/>
-<wire x1="68.519996875" y1="88.9" x2="68.52" y2="88.9" width="0" layer="19" extent="1-1"/>
+<wire x1="45.72" y1="88.9" x2="68.52" y2="88.9" width="0" layer="19" extent="1-1"/>
 </signal>
 <signal name="V+" class="2">
 <contactref element="J2" pad="2"/>
@@ -4344,11 +4343,9 @@ Please make sure your boards conform to these design rules.
 <signal name="N$18">
 <contactref element="Q3" pad="1"/>
 <contactref element="R13" pad="2"/>
-<wire x1="51.877" y1="51.816" x2="51.623" y2="52.07" width="0.254" layer="1"/>
 <wire x1="54.889" y1="52.349" x2="54.889" y2="53.264" width="0.254" layer="1"/>
 <wire x1="54.356" y1="51.816" x2="54.889" y2="52.349" width="0.254" layer="1"/>
 <wire x1="51.369" y1="51.816" x2="54.356" y2="51.816" width="0.254" layer="1"/>
-<wire x1="51.369" y1="51.816" x2="51.623" y2="52.07" width="0" layer="19" extent="1-1"/>
 </signal>
 <signal name="N$15">
 <contactref element="R19" pad="2"/>

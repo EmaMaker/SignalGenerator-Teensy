@@ -192,6 +192,10 @@
 <wire x1="0" y1="100.076" x2="0.01" y2="9.144" width="0" layer="20"/>
 <dimension x1="120.904" y1="100.076" x2="120.904" y2="9.144" x3="122.428" y3="54.61" textsize="1.778" layer="1"/>
 <dimension x1="0" y1="101.092" x2="111.506" y2="101.092" x3="55.753" y3="103.124" textsize="1.778" layer="1"/>
+<text x="61.976" y="57.658" size="0.381" layer="25">FILTERED</text>
+<text x="66.548" y="57.658" size="0.381" layer="25">NOT FILTERED</text>
+<text x="76.708" y="57.658" size="0.381" layer="25">FILTERED</text>
+<text x="81.28" y="57.658" size="0.381" layer="25">NOT FILTERED</text>
 </plain>
 <libraries>
 <library name="Teensy356">
@@ -2609,7 +2613,7 @@ Please make sure your boards conform to these design rules.
 <element name="J_OUT_DAC" library="con-lstb" library_urn="urn:adsk.eagle:library:162" package="MA03-1" package3d_urn="urn:adsk.eagle:package:8339/1" value="" x="65.786" y="55.88" smashed="yes">
 <attribute name="MF" value="" x="65.786" y="62.23" size="1.778" layer="27" display="off"/>
 <attribute name="MPN" value="" x="65.786" y="62.23" size="1.778" layer="27" display="off"/>
-<attribute name="NAME" x="60.706" y="57.531" size="1.27" layer="25" ratio="10"/>
+<attribute name="NAME" x="60.706" y="52.959" size="1.27" layer="25" ratio="10"/>
 <attribute name="OC_FARNELL" value="unknown" x="65.786" y="62.23" size="1.778" layer="27" display="off"/>
 <attribute name="OC_NEWARK" value="unknown" x="65.786" y="62.23" size="1.778" layer="27" display="off"/>
 <attribute name="POPULARITY" value="48" x="65.786" y="62.23" size="1.778" layer="27" display="off"/>
