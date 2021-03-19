@@ -6,7 +6,7 @@
 <setting alwaysvectorfont="no"/>
 <setting verticaltext="up"/>
 </settings>
-<grid distance="0.1" unitdist="inch" unit="inch" style="lines" multiple="1" display="yes" altdistance="0.05" altunitdist="inch" altunit="inch"/>
+<grid distance="0.1" unitdist="inch" unit="inch" style="lines" multiple="1" display="no" altdistance="0.01" altunitdist="inch" altunit="inch"/>
 <layers>
 <layer number="1" name="Top" color="4" fill="1" visible="no" active="no"/>
 <layer number="2" name="Route2" color="1" fill="3" visible="no" active="no"/>
@@ -25513,7 +25513,7 @@ Source: www.kingbright.com</description>
 </class>
 <class number="1" name="signal" width="0.254" drill="0">
 </class>
-<class number="2" name="supply" width="0.762" drill="0">
+<class number="2" name="supply" width="0.381" drill="0">
 </class>
 </classes>
 <parts>
@@ -26017,13 +26017,13 @@ IN SOFTWARE (PINMODE INPUT_PULLUP)</text>
 <instance part="GND3" gate="1" x="38.1" y="-215.9" smashed="yes">
 <attribute name="VALUE" x="35.56" y="-218.44" size="1.778" layer="96"/>
 </instance>
-<instance part="IC1" gate="A" x="243.84" y="-83.82" smashed="yes" rot="MR180">
-<attribute name="NAME" x="246.38" y="-86.995" size="1.778" layer="95" rot="MR180"/>
-<attribute name="VALUE" x="243.84" y="-78.74" size="1.778" layer="96" rot="MR180"/>
+<instance part="IC1" gate="A" x="325.12" y="-81.28" smashed="yes" rot="MR180">
+<attribute name="NAME" x="327.66" y="-84.455" size="1.778" layer="95" rot="MR180"/>
+<attribute name="VALUE" x="325.12" y="-76.2" size="1.778" layer="96" rot="MR180"/>
 </instance>
-<instance part="IC1" gate="B" x="324.866" y="-81.28" smashed="yes" rot="MR180">
-<attribute name="NAME" x="327.406" y="-84.455" size="1.778" layer="95" rot="MR180"/>
-<attribute name="VALUE" x="324.866" y="-76.2" size="1.778" layer="96" rot="MR180"/>
+<instance part="IC1" gate="B" x="243.586" y="-83.82" smashed="yes" rot="MR180">
+<attribute name="NAME" x="246.126" y="-86.995" size="1.778" layer="95" rot="MR180"/>
+<attribute name="VALUE" x="243.586" y="-78.74" size="1.778" layer="96" rot="MR180"/>
 </instance>
 <instance part="IC2" gate="A" x="243.84" y="-116.84" smashed="yes" rot="MR180">
 <attribute name="NAME" x="246.38" y="-120.015" size="1.778" layer="95" rot="MR180"/>
@@ -26842,9 +26842,9 @@ IN SOFTWARE (PINMODE INPUT_PULLUP)</text>
 <label x="66.04" y="-160.02" size="1.778" layer="95"/>
 </segment>
 <segment>
-<pinref part="U$1" gate="G$1" pin="33/A14"/>
-<wire x1="20.32" y1="-45.72" x2="27.94" y2="-45.72" width="0.1524" layer="91"/>
-<label x="22.86" y="-45.72" size="1.778" layer="95"/>
+<pinref part="U$1" gate="G$1" pin="32/A13"/>
+<wire x1="-20.32" y1="-45.72" x2="-25.4" y2="-45.72" width="0.1524" layer="91"/>
+<label x="-25.4" y="-45.72" size="1.778" layer="95"/>
 </segment>
 </net>
 <net name="TX1" class="1">
@@ -26854,9 +26854,9 @@ IN SOFTWARE (PINMODE INPUT_PULLUP)</text>
 <label x="66.04" y="-157.48" size="1.778" layer="95"/>
 </segment>
 <segment>
-<pinref part="U$1" gate="G$1" pin="34/A15"/>
-<wire x1="20.32" y1="-43.18" x2="27.94" y2="-43.18" width="0.1524" layer="91"/>
-<label x="22.86" y="-43.18" size="1.778" layer="95"/>
+<pinref part="U$1" gate="G$1" pin="31/A12"/>
+<wire x1="-20.32" y1="-43.18" x2="-25.4" y2="-43.18" width="0.1524" layer="91"/>
+<label x="-25.4" y="-43.18" size="1.778" layer="95"/>
 </segment>
 </net>
 <net name="N$1" class="1">
@@ -27332,58 +27332,44 @@ IN SOFTWARE (PINMODE INPUT_PULLUP)</text>
 </net>
 <net name="N$3" class="1">
 <segment>
-<pinref part="IC1" gate="A" pin="+IN"/>
-<wire x1="236.22" y1="-86.36" x2="233.68" y2="-86.36" width="0.1524" layer="91"/>
 <wire x1="233.68" y1="-86.36" x2="233.68" y2="-91.44" width="0.1524" layer="91"/>
 <wire x1="233.68" y1="-91.44" x2="231.14" y2="-91.44" width="0.1524" layer="91"/>
 <pinref part="R6" gate="G$1" pin="1"/>
 <wire x1="233.68" y1="-95.25" x2="233.68" y2="-91.44" width="0.1524" layer="91"/>
 <junction x="233.68" y="-91.44"/>
 <pinref part="U$5" gate="G$1" pin="3"/>
+<pinref part="IC1" gate="B" pin="+IN"/>
+<wire x1="233.68" y1="-86.36" x2="235.966" y2="-86.36" width="0.1524" layer="91"/>
 </segment>
 </net>
 <net name="N$5" class="1">
 <segment>
 <pinref part="R1" gate="G$1" pin="2"/>
-<pinref part="IC1" gate="A" pin="-IN"/>
 <wire x1="231.14" y1="-81.28" x2="233.68" y2="-81.28" width="0.1524" layer="91"/>
-<wire x1="233.68" y1="-81.28" x2="236.22" y2="-81.28" width="0.1524" layer="91"/>
 <wire x1="233.68" y1="-73.66" x2="233.68" y2="-81.28" width="0.1524" layer="91"/>
-<junction x="233.68" y="-81.28"/>
 <pinref part="R19" gate="G$1" pin="1"/>
 <wire x1="236.22" y1="-73.66" x2="233.68" y2="-73.66" width="0.1524" layer="91"/>
+<pinref part="IC1" gate="B" pin="-IN"/>
+<wire x1="235.966" y1="-81.28" x2="233.68" y2="-81.28" width="0.1524" layer="91"/>
+<junction x="233.68" y="-81.28"/>
 </segment>
 </net>
 <net name="N$9" class="1">
 <segment>
-<pinref part="IC1" gate="A" pin="OUT"/>
-<wire x1="251.46" y1="-83.82" x2="254" y2="-83.82" width="0.1524" layer="91"/>
-<pinref part="IC1" gate="B" pin="+IN"/>
 <wire x1="254" y1="-83.82" x2="259.08" y2="-83.82" width="0.1524" layer="91"/>
 <junction x="254" y="-83.82"/>
 <pinref part="IC4" gate="G$1" pin="VIN"/>
-<wire x1="259.08" y1="-83.82" x2="317.246" y2="-83.82" width="0.1524" layer="91"/>
 <wire x1="259.08" y1="-96.52" x2="254" y2="-96.52" width="0.1524" layer="91"/>
 <wire x1="254" y1="-96.52" x2="254" y2="-83.82" width="0.1524" layer="91"/>
 <pinref part="U$6" gate="G$1" pin="2"/>
 <wire x1="259.08" y1="-73.66" x2="259.08" y2="-83.82" width="0.1524" layer="91"/>
-<junction x="259.08" y="-83.82"/>
 <pinref part="U$6" gate="G$1" pin="3"/>
 <wire x1="254" y1="-78.74" x2="254" y2="-83.82" width="0.1524" layer="91"/>
-</segment>
-</net>
-<net name="N$6" class="1">
-<segment>
-<pinref part="IC1" gate="B" pin="-IN"/>
-<wire x1="317.246" y1="-78.74" x2="314.706" y2="-78.74" width="0.1524" layer="91"/>
-<wire x1="314.706" y1="-78.74" x2="314.706" y2="-73.66" width="0.1524" layer="91"/>
-<wire x1="314.706" y1="-73.66" x2="335.026" y2="-73.66" width="0.1524" layer="91"/>
-<wire x1="335.026" y1="-73.66" x2="335.026" y2="-81.28" width="0.1524" layer="91"/>
 <pinref part="IC1" gate="B" pin="OUT"/>
-<wire x1="335.026" y1="-81.28" x2="332.486" y2="-81.28" width="0.1524" layer="91"/>
-<wire x1="335.026" y1="-81.28" x2="345.186" y2="-81.28" width="0.1524" layer="91"/>
-<junction x="335.026" y="-81.28"/>
-<pinref part="X1" gate="G$1" pin="1"/>
+<wire x1="251.206" y1="-83.82" x2="254" y2="-83.82" width="0.1524" layer="91"/>
+<pinref part="IC1" gate="A" pin="+IN"/>
+<wire x1="259.08" y1="-83.82" x2="317.5" y2="-83.82" width="0.1524" layer="91"/>
+<junction x="259.08" y="-83.82"/>
 </segment>
 </net>
 <net name="N$10" class="1">
@@ -27511,6 +27497,20 @@ IN SOFTWARE (PINMODE INPUT_PULLUP)</text>
 <pinref part="R19" gate="G$1" pin="2"/>
 <pinref part="U$6" gate="G$1" pin="1"/>
 <wire x1="246.38" y1="-73.66" x2="248.92" y2="-73.66" width="0.1524" layer="91"/>
+</segment>
+</net>
+<net name="N$19" class="1">
+<segment>
+<pinref part="IC1" gate="A" pin="-IN"/>
+<wire x1="317.5" y1="-78.74" x2="314.96" y2="-78.74" width="0.1524" layer="91"/>
+<wire x1="314.96" y1="-78.74" x2="314.96" y2="-73.66" width="0.1524" layer="91"/>
+<pinref part="X1" gate="G$1" pin="1"/>
+<pinref part="IC1" gate="A" pin="OUT"/>
+<wire x1="345.186" y1="-81.28" x2="335.28" y2="-81.28" width="0.1524" layer="91"/>
+<wire x1="335.28" y1="-81.28" x2="332.74" y2="-81.28" width="0.1524" layer="91"/>
+<wire x1="314.96" y1="-73.66" x2="335.28" y2="-73.66" width="0.1524" layer="91"/>
+<wire x1="335.28" y1="-73.66" x2="335.28" y2="-81.28" width="0.1524" layer="91"/>
+<junction x="335.28" y="-81.28"/>
 </segment>
 </net>
 </nets>
