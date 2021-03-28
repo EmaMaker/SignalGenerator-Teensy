@@ -6,7 +6,7 @@
 <setting alwaysvectorfont="no"/>
 <setting verticaltext="up"/>
 </settings>
-<grid distance="20" unitdist="mil" unit="mil" style="lines" multiple="1" display="yes" altdistance="5" altunitdist="mil" altunit="mil"/>
+<grid distance="5" unitdist="mil" unit="mil" style="lines" multiple="1" display="yes" altdistance="1" altunitdist="mil" altunit="mil"/>
 <layers>
 <layer number="1" name="Top" color="4" fill="1" visible="yes" active="yes"/>
 <layer number="2" name="Route2" color="16" fill="1" visible="no" active="no"/>
@@ -3968,23 +3968,33 @@ Please make sure your boards conform to these design rules.
 <contactref element="R6" pad="2"/>
 <wire x1="68.52" y1="90.17" x2="66.802" y2="90.17" width="0.254" layer="1"/>
 <wire x1="66.802" y1="90.17" x2="66.167" y2="90.805" width="0.254" layer="1"/>
-<wire x1="66.167" y1="90.805" x2="66.167" y2="91.44" width="0.254" layer="1"/>
-<wire x1="66.167" y1="91.44" x2="66.167" y2="95.758" width="0.254" layer="1"/>
+<wire x1="66.167" y1="90.805" x2="66.167" y2="91.186" width="0.254" layer="1"/>
+<wire x1="66.167" y1="91.186" x2="66.167" y2="91.44" width="0.254" layer="1"/>
+<wire x1="66.167" y1="91.44" x2="66.167" y2="91.694" width="0.254" layer="1"/>
+<wire x1="66.167" y1="91.694" x2="66.167" y2="95.758" width="0.254" layer="1"/>
 <wire x1="66.167" y1="95.758" x2="67.056" y2="96.647" width="0.254" layer="1"/>
 <wire x1="67.056" y1="96.647" x2="70.17" y2="96.647" width="0.254" layer="1"/>
-<wire x1="68.52" y1="91.44" x2="66.167" y2="91.44" width="0.254" layer="1"/>
+<wire x1="68.52" y1="91.44" x2="66.421" y2="91.44" width="0.254" layer="1"/>
+<wire x1="66.421" y1="91.44" x2="66.167" y2="91.44" width="0.254" layer="1"/>
+<wire x1="66.421" y1="91.44" x2="66.167" y2="91.186" width="0.254" layer="1"/>
+<wire x1="66.421" y1="91.44" x2="66.167" y2="91.694" width="0.254" layer="1"/>
 </signal>
 <signal name="N$51" class="1">
 <contactref element="R6" pad="1"/>
 <contactref element="IC1" pad="6"/>
 <contactref element="R12" pad="2"/>
-<wire x1="72.07" y1="96.647" x2="78.486" y2="96.647" width="0.254" layer="1"/>
-<wire x1="78.486" y1="96.647" x2="79.248" y2="96.647" width="0.254" layer="1"/>
+<wire x1="72.07" y1="96.647" x2="78.232" y2="96.647" width="0.254" layer="1"/>
+<wire x1="78.232" y1="96.647" x2="78.486" y2="96.647" width="0.254" layer="1"/>
+<wire x1="78.486" y1="96.647" x2="78.74" y2="96.647" width="0.254" layer="1"/>
+<wire x1="78.74" y1="96.647" x2="79.248" y2="96.647" width="0.254" layer="1"/>
 <wire x1="79.248" y1="96.647" x2="80.01" y2="95.885" width="0.254" layer="1"/>
 <wire x1="80.01" y1="89.535" x2="80.01" y2="95.885" width="0.254" layer="1"/>
 <wire x1="73.72" y1="88.9" x2="79.375" y2="88.9" width="0.254" layer="1"/>
 <wire x1="80.01" y1="89.535" x2="79.375" y2="88.9" width="0.254" layer="1"/>
-<wire x1="78.486" y1="94.168" x2="78.486" y2="96.647" width="0.254" layer="1"/>
+<wire x1="78.486" y1="94.168" x2="78.486" y2="96.393" width="0.254" layer="1"/>
+<wire x1="78.486" y1="96.393" x2="78.486" y2="96.647" width="0.254" layer="1"/>
+<wire x1="78.74" y1="96.647" x2="78.486" y2="96.393" width="0.254" layer="1"/>
+<wire x1="78.486" y1="96.393" x2="78.232" y2="96.647" width="0.254" layer="1"/>
 </signal>
 <signal name="N$54" class="1">
 <contactref element="IC1" pad="5"/>

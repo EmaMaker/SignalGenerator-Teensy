@@ -6,7 +6,7 @@
 <setting alwaysvectorfont="no"/>
 <setting verticaltext="up"/>
 </settings>
-<grid distance="0.1" unitdist="inch" unit="inch" style="lines" multiple="1" display="no" altdistance="0.01" altunitdist="inch" altunit="inch"/>
+<grid distance="0.1" unitdist="inch" unit="inch" style="lines" multiple="1" display="yes" altdistance="0.05" altunitdist="inch" altunit="inch"/>
 <layers>
 <layer number="1" name="Top" color="4" fill="1" visible="no" active="no"/>
 <layer number="2" name="Route2" color="1" fill="3" visible="no" active="no"/>
@@ -16866,35 +16866,35 @@ Source: www.kingbright.com</description>
 <part name="R13" library="rcl" library_urn="urn:adsk.eagle:library:334" deviceset="R-EU_" device="R0805" package3d_urn="urn:adsk.eagle:package:23553/2" value="1k"/>
 <part name="GND17" library="supply1" library_urn="urn:adsk.eagle:library:371" deviceset="GND" device=""/>
 <part name="IC3" library="linear" library_urn="urn:adsk.eagle:library:262" deviceset="TL082" device="D" package3d_urn="urn:adsk.eagle:package:16404/2" value="AD8034"/>
-<part name="R14" library="rcl" library_urn="urn:adsk.eagle:library:334" deviceset="R-EU_" device="R0805" package3d_urn="urn:adsk.eagle:package:23553/2"/>
-<part name="R18" library="rcl" library_urn="urn:adsk.eagle:library:334" deviceset="R-EU_" device="R0805" package3d_urn="urn:adsk.eagle:package:23553/2"/>
-<part name="C24" library="rcl" library_urn="urn:adsk.eagle:library:334" deviceset="C-EU" device="C0805" package3d_urn="urn:adsk.eagle:package:23617/2"/>
-<part name="C27" library="rcl" library_urn="urn:adsk.eagle:library:334" deviceset="C-EU" device="C0805" package3d_urn="urn:adsk.eagle:package:23617/2"/>
+<part name="R14" library="rcl" library_urn="urn:adsk.eagle:library:334" deviceset="R-EU_" device="R0805" package3d_urn="urn:adsk.eagle:package:23553/2" value="2.74k"/>
+<part name="R18" library="rcl" library_urn="urn:adsk.eagle:library:334" deviceset="R-EU_" device="R0805" package3d_urn="urn:adsk.eagle:package:23553/2" value="2.74k"/>
+<part name="C24" library="rcl" library_urn="urn:adsk.eagle:library:334" deviceset="C-EU" device="C0805" package3d_urn="urn:adsk.eagle:package:23617/2" value="10p"/>
+<part name="C27" library="rcl" library_urn="urn:adsk.eagle:library:334" deviceset="C-EU" device="C0805" package3d_urn="urn:adsk.eagle:package:23617/2" value="100p"/>
 <part name="GND19" library="supply1" library_urn="urn:adsk.eagle:library:371" deviceset="GND" device=""/>
-<part name="R20" library="rcl" library_urn="urn:adsk.eagle:library:334" deviceset="R-EU_" device="M0805" package3d_urn="urn:adsk.eagle:package:23556/2"/>
-<part name="R22" library="rcl" library_urn="urn:adsk.eagle:library:334" deviceset="R-EU_" device="M0805" package3d_urn="urn:adsk.eagle:package:23556/2"/>
-<part name="C28" library="rcl" library_urn="urn:adsk.eagle:library:334" deviceset="C-EU" device="C0805" package3d_urn="urn:adsk.eagle:package:23617/2"/>
-<part name="C30" library="rcl" library_urn="urn:adsk.eagle:library:334" deviceset="C-EU" device="C0805" package3d_urn="urn:adsk.eagle:package:23617/2"/>
+<part name="R20" library="rcl" library_urn="urn:adsk.eagle:library:334" deviceset="R-EU_" device="M0805" package3d_urn="urn:adsk.eagle:package:23556/2" value="787"/>
+<part name="R22" library="rcl" library_urn="urn:adsk.eagle:library:334" deviceset="R-EU_" device="M0805" package3d_urn="urn:adsk.eagle:package:23556/2" value="14.3k"/>
+<part name="C28" library="rcl" library_urn="urn:adsk.eagle:library:334" deviceset="C-EU" device="C0805" package3d_urn="urn:adsk.eagle:package:23617/2" value="10p"/>
+<part name="C30" library="rcl" library_urn="urn:adsk.eagle:library:334" deviceset="C-EU" device="C0805" package3d_urn="urn:adsk.eagle:package:23617/2" value="100p"/>
 <part name="IC4" library="linear" library_urn="urn:adsk.eagle:library:262" deviceset="TL082" device="D" package3d_urn="urn:adsk.eagle:package:16404/2" value="AD8034"/>
-<part name="R21" library="rcl" library_urn="urn:adsk.eagle:library:334" deviceset="R-EU_" device="R0805" package3d_urn="urn:adsk.eagle:package:23553/2"/>
-<part name="R23" library="rcl" library_urn="urn:adsk.eagle:library:334" deviceset="R-EU_" device="R0805" package3d_urn="urn:adsk.eagle:package:23553/2"/>
-<part name="C29" library="rcl" library_urn="urn:adsk.eagle:library:334" deviceset="C-EU" device="C0805" package3d_urn="urn:adsk.eagle:package:23617/2"/>
-<part name="C31" library="rcl" library_urn="urn:adsk.eagle:library:334" deviceset="C-EU" device="C0805" package3d_urn="urn:adsk.eagle:package:23617/2"/>
+<part name="R21" library="rcl" library_urn="urn:adsk.eagle:library:334" deviceset="R-EU_" device="R0805" package3d_urn="urn:adsk.eagle:package:23553/2" value="150"/>
+<part name="R23" library="rcl" library_urn="urn:adsk.eagle:library:334" deviceset="R-EU_" device="R0805" package3d_urn="urn:adsk.eagle:package:23553/2" value="3.74k"/>
+<part name="C29" library="rcl" library_urn="urn:adsk.eagle:library:334" deviceset="C-EU" device="C0805" package3d_urn="urn:adsk.eagle:package:23617/2" value="10p"/>
+<part name="C31" library="rcl" library_urn="urn:adsk.eagle:library:334" deviceset="C-EU" device="C0805" package3d_urn="urn:adsk.eagle:package:23617/2" value="100p"/>
 <part name="GND20" library="supply1" library_urn="urn:adsk.eagle:library:371" deviceset="GND" device=""/>
-<part name="R15" library="rcl" library_urn="urn:adsk.eagle:library:334" deviceset="R-EU_" device="M0805" package3d_urn="urn:adsk.eagle:package:23556/2"/>
-<part name="R19" library="rcl" library_urn="urn:adsk.eagle:library:334" deviceset="R-EU_" device="M0805" package3d_urn="urn:adsk.eagle:package:23556/2"/>
-<part name="C25" library="rcl" library_urn="urn:adsk.eagle:library:334" deviceset="C-EU" device="C0805" package3d_urn="urn:adsk.eagle:package:23617/2"/>
-<part name="C26" library="rcl" library_urn="urn:adsk.eagle:library:334" deviceset="C-EU" device="C0805" package3d_urn="urn:adsk.eagle:package:23617/2"/>
+<part name="R15" library="rcl" library_urn="urn:adsk.eagle:library:334" deviceset="R-EU_" device="M0805" package3d_urn="urn:adsk.eagle:package:23556/2" value="130"/>
+<part name="R19" library="rcl" library_urn="urn:adsk.eagle:library:334" deviceset="R-EU_" device="M0805" package3d_urn="urn:adsk.eagle:package:23556/2" value="4.75k"/>
+<part name="C25" library="rcl" library_urn="urn:adsk.eagle:library:334" deviceset="C-EU" device="C0805" package3d_urn="urn:adsk.eagle:package:23617/2" value="10p"/>
+<part name="C26" library="rcl" library_urn="urn:adsk.eagle:library:334" deviceset="C-EU" device="C0805" package3d_urn="urn:adsk.eagle:package:23617/2" value="100p"/>
 <part name="IC7" library="linear" library_urn="urn:adsk.eagle:library:262" deviceset="TL082" device="D" package3d_urn="urn:adsk.eagle:package:16404/2" value="AD8034"/>
-<part name="R32" library="rcl" library_urn="urn:adsk.eagle:library:334" deviceset="R-EU_" device="R0805" package3d_urn="urn:adsk.eagle:package:23553/2"/>
-<part name="R34" library="rcl" library_urn="urn:adsk.eagle:library:334" deviceset="R-EU_" device="R0805" package3d_urn="urn:adsk.eagle:package:23553/2"/>
-<part name="C32" library="rcl" library_urn="urn:adsk.eagle:library:334" deviceset="C-EU" device="C0805" package3d_urn="urn:adsk.eagle:package:23617/2"/>
-<part name="C34" library="rcl" library_urn="urn:adsk.eagle:library:334" deviceset="C-EU" device="C0805" package3d_urn="urn:adsk.eagle:package:23617/2"/>
+<part name="R32" library="rcl" library_urn="urn:adsk.eagle:library:334" deviceset="R-EU_" device="R0805" package3d_urn="urn:adsk.eagle:package:23553/2" value="562"/>
+<part name="R34" library="rcl" library_urn="urn:adsk.eagle:library:334" deviceset="R-EU_" device="R0805" package3d_urn="urn:adsk.eagle:package:23553/2" value="20k"/>
+<part name="C32" library="rcl" library_urn="urn:adsk.eagle:library:334" deviceset="C-EU" device="C0805" package3d_urn="urn:adsk.eagle:package:23617/2" value="10p"/>
+<part name="C34" library="rcl" library_urn="urn:adsk.eagle:library:334" deviceset="C-EU" device="C0805" package3d_urn="urn:adsk.eagle:package:23617/2" value="100p"/>
 <part name="GND21" library="supply1" library_urn="urn:adsk.eagle:library:371" deviceset="GND" device=""/>
-<part name="R33" library="rcl" library_urn="urn:adsk.eagle:library:334" deviceset="R-EU_" device="M0805" package3d_urn="urn:adsk.eagle:package:23556/2"/>
-<part name="R35" library="rcl" library_urn="urn:adsk.eagle:library:334" deviceset="R-EU_" device="M0805" package3d_urn="urn:adsk.eagle:package:23556/2"/>
-<part name="C33" library="rcl" library_urn="urn:adsk.eagle:library:334" deviceset="C-EU" device="C0805" package3d_urn="urn:adsk.eagle:package:23617/2"/>
-<part name="C35" library="rcl" library_urn="urn:adsk.eagle:library:334" deviceset="C-EU" device="C0805" package3d_urn="urn:adsk.eagle:package:23617/2"/>
+<part name="R33" library="rcl" library_urn="urn:adsk.eagle:library:334" deviceset="R-EU_" device="M0805" package3d_urn="urn:adsk.eagle:package:23556/2" value="243"/>
+<part name="R35" library="rcl" library_urn="urn:adsk.eagle:library:334" deviceset="R-EU_" device="M0805" package3d_urn="urn:adsk.eagle:package:23556/2" value="1.78k"/>
+<part name="C33" library="rcl" library_urn="urn:adsk.eagle:library:334" deviceset="C-EU" device="C0805" package3d_urn="urn:adsk.eagle:package:23617/2" value="10p"/>
+<part name="C35" library="rcl" library_urn="urn:adsk.eagle:library:334" deviceset="C-EU" device="C0805" package3d_urn="urn:adsk.eagle:package:23617/2" value="100p"/>
 <part name="C1" library="rcl" library_urn="urn:adsk.eagle:library:334" deviceset="C-EU" device="C0805" package3d_urn="urn:adsk.eagle:package:23617/2" value="100n"/>
 <part name="C4" library="rcl" library_urn="urn:adsk.eagle:library:334" deviceset="C-EU" device="C0805" package3d_urn="urn:adsk.eagle:package:23617/2" value="100n"/>
 <part name="C9" library="rcl" library_urn="urn:adsk.eagle:library:334" deviceset="C-EU" device="C0805" package3d_urn="urn:adsk.eagle:package:23617/2" value="100n"/>
@@ -17131,20 +17131,16 @@ IN SOFTWARE (PINMODE INPUT_PULLUP)</text>
 <attribute name="VALUE" x="182.88" y="16.51" size="1.778" layer="96"/>
 </instance>
 <instance part="R14" gate="G$1" x="144.78" y="15.24" smashed="yes">
-<attribute name="NAME" x="140.97" y="16.7386" size="1.778" layer="95"/>
-<attribute name="VALUE" x="140.97" y="11.938" size="1.778" layer="96"/>
+<attribute name="NAME" x="142.24" y="17.78" size="1.778" layer="95"/>
 </instance>
 <instance part="R18" gate="G$1" x="160.02" y="15.24" smashed="yes">
-<attribute name="NAME" x="156.21" y="16.7386" size="1.778" layer="95"/>
-<attribute name="VALUE" x="156.21" y="11.938" size="1.778" layer="96"/>
+<attribute name="NAME" x="157.48" y="17.78" size="1.778" layer="95"/>
 </instance>
 <instance part="C24" gate="G$1" x="167.64" y="7.62" smashed="yes" rot="R180">
-<attribute name="NAME" x="166.116" y="7.239" size="1.778" layer="95" rot="R180"/>
-<attribute name="VALUE" x="166.116" y="12.319" size="1.778" layer="96" rot="R180"/>
+<attribute name="NAME" x="165.1" y="10.16" size="1.778" layer="95" rot="R180"/>
 </instance>
 <instance part="C27" gate="G$1" x="173.99" y="22.86" smashed="yes" rot="R270">
 <attribute name="NAME" x="174.244" y="24.511" size="1.778" layer="95"/>
-<attribute name="VALUE" x="169.291" y="21.336" size="1.778" layer="96" rot="R270"/>
 </instance>
 <instance part="GND19" gate="1" x="167.64" y="0" smashed="yes">
 <attribute name="VALUE" x="165.1" y="-2.54" size="1.778" layer="96"/>
@@ -17154,20 +17150,16 @@ IN SOFTWARE (PINMODE INPUT_PULLUP)</text>
 <attribute name="VALUE" x="238.76" y="13.97" size="1.778" layer="96"/>
 </instance>
 <instance part="R20" gate="G$1" x="200.66" y="12.7" smashed="yes">
-<attribute name="NAME" x="196.85" y="14.1986" size="1.778" layer="95"/>
-<attribute name="VALUE" x="196.85" y="9.398" size="1.778" layer="96"/>
+<attribute name="NAME" x="198.12" y="15.24" size="1.778" layer="95"/>
 </instance>
 <instance part="R22" gate="G$1" x="215.9" y="12.7" smashed="yes">
-<attribute name="NAME" x="212.09" y="14.1986" size="1.778" layer="95"/>
-<attribute name="VALUE" x="212.09" y="9.398" size="1.778" layer="96"/>
+<attribute name="NAME" x="213.36" y="15.24" size="1.778" layer="95"/>
 </instance>
 <instance part="C28" gate="G$1" x="223.52" y="5.08" smashed="yes" rot="R180">
-<attribute name="NAME" x="221.996" y="4.699" size="1.778" layer="95" rot="R180"/>
-<attribute name="VALUE" x="221.996" y="9.779" size="1.778" layer="96" rot="R180"/>
+<attribute name="NAME" x="220.98" y="7.62" size="1.778" layer="95" rot="R180"/>
 </instance>
 <instance part="C30" gate="G$1" x="227.33" y="20.32" smashed="yes" rot="R90">
-<attribute name="NAME" x="234.696" y="23.749" size="1.778" layer="95" rot="R180"/>
-<attribute name="VALUE" x="232.029" y="21.844" size="1.778" layer="96" rot="R90"/>
+<attribute name="NAME" x="231.14" y="21.59" size="1.778" layer="95"/>
 </instance>
 <instance part="IC4" gate="A" x="238.76" y="-33.02" smashed="yes">
 <attribute name="NAME" x="240.03" y="-37.465" size="1.778" layer="95"/>
@@ -17175,19 +17167,15 @@ IN SOFTWARE (PINMODE INPUT_PULLUP)</text>
 </instance>
 <instance part="R21" gate="G$1" x="200.66" y="-30.48" smashed="yes">
 <attribute name="NAME" x="196.85" y="-28.9814" size="1.778" layer="95"/>
-<attribute name="VALUE" x="196.85" y="-33.782" size="1.778" layer="96"/>
 </instance>
 <instance part="R23" gate="G$1" x="215.9" y="-30.48" smashed="yes">
 <attribute name="NAME" x="212.09" y="-28.9814" size="1.778" layer="95"/>
-<attribute name="VALUE" x="212.09" y="-33.782" size="1.778" layer="96"/>
 </instance>
 <instance part="C29" gate="G$1" x="223.52" y="-38.1" smashed="yes" rot="R180">
-<attribute name="NAME" x="221.996" y="-38.481" size="1.778" layer="95" rot="R180"/>
-<attribute name="VALUE" x="221.996" y="-33.401" size="1.778" layer="96" rot="R180"/>
+<attribute name="NAME" x="220.98" y="-35.56" size="1.778" layer="95" rot="R180"/>
 </instance>
 <instance part="C31" gate="G$1" x="229.87" y="-22.86" smashed="yes" rot="R270">
-<attribute name="NAME" x="230.124" y="-21.209" size="1.778" layer="95"/>
-<attribute name="VALUE" x="225.171" y="-24.384" size="1.778" layer="96" rot="R270"/>
+<attribute name="NAME" x="231.14" y="-21.59" size="1.778" layer="95"/>
 </instance>
 <instance part="GND20" gate="1" x="223.52" y="-45.72" smashed="yes">
 <attribute name="VALUE" x="220.98" y="-48.26" size="1.778" layer="96"/>
@@ -17198,19 +17186,15 @@ IN SOFTWARE (PINMODE INPUT_PULLUP)</text>
 </instance>
 <instance part="R15" gate="G$1" x="144.78" y="-27.94" smashed="yes">
 <attribute name="NAME" x="142.24" y="-25.4" size="1.778" layer="95"/>
-<attribute name="VALUE" x="140.97" y="-31.242" size="1.778" layer="96"/>
 </instance>
 <instance part="R19" gate="G$1" x="160.02" y="-27.94" smashed="yes">
 <attribute name="NAME" x="157.48" y="-25.4" size="1.778" layer="95"/>
-<attribute name="VALUE" x="156.21" y="-31.242" size="1.778" layer="96"/>
 </instance>
 <instance part="C25" gate="G$1" x="167.64" y="-35.56" smashed="yes" rot="R180">
-<attribute name="NAME" x="165.1" y="-35.56" size="1.778" layer="95" rot="R180"/>
-<attribute name="VALUE" x="166.116" y="-30.861" size="1.778" layer="96" rot="R180"/>
+<attribute name="NAME" x="165.1" y="-33.02" size="1.778" layer="95" rot="R180"/>
 </instance>
 <instance part="C26" gate="G$1" x="171.45" y="-20.32" smashed="yes" rot="R90">
-<attribute name="NAME" x="178.816" y="-16.891" size="1.778" layer="95" rot="R180"/>
-<attribute name="VALUE" x="176.149" y="-18.796" size="1.778" layer="96" rot="R90"/>
+<attribute name="NAME" x="175.26" y="-19.05" size="1.778" layer="95"/>
 </instance>
 <instance part="IC7" gate="A" x="297.18" y="7.62" smashed="yes">
 <attribute name="NAME" x="298.45" y="3.175" size="1.778" layer="95"/>
@@ -17218,19 +17202,15 @@ IN SOFTWARE (PINMODE INPUT_PULLUP)</text>
 </instance>
 <instance part="R32" gate="G$1" x="259.08" y="10.16" smashed="yes">
 <attribute name="NAME" x="255.27" y="11.6586" size="1.778" layer="95"/>
-<attribute name="VALUE" x="255.27" y="6.858" size="1.778" layer="96"/>
 </instance>
 <instance part="R34" gate="G$1" x="274.32" y="10.16" smashed="yes">
 <attribute name="NAME" x="270.51" y="11.6586" size="1.778" layer="95"/>
-<attribute name="VALUE" x="270.51" y="6.858" size="1.778" layer="96"/>
 </instance>
 <instance part="C32" gate="G$1" x="281.94" y="2.54" smashed="yes" rot="R180">
-<attribute name="NAME" x="280.416" y="2.159" size="1.778" layer="95" rot="R180"/>
-<attribute name="VALUE" x="280.416" y="7.239" size="1.778" layer="96" rot="R180"/>
+<attribute name="NAME" x="279.4" y="5.08" size="1.778" layer="95" rot="R180"/>
 </instance>
-<instance part="C34" gate="G$1" x="287.02" y="17.78" smashed="yes" rot="R270">
-<attribute name="NAME" x="288.29" y="19.05" size="1.778" layer="95"/>
-<attribute name="VALUE" x="282.321" y="16.256" size="1.778" layer="96" rot="R270"/>
+<instance part="C34" gate="G$1" x="288.29" y="17.78" smashed="yes" rot="R270">
+<attribute name="NAME" x="289.56" y="19.05" size="1.778" layer="95"/>
 </instance>
 <instance part="GND21" gate="1" x="281.94" y="-5.08" smashed="yes">
 <attribute name="VALUE" x="279.4" y="-7.62" size="1.778" layer="96"/>
@@ -17241,19 +17221,15 @@ IN SOFTWARE (PINMODE INPUT_PULLUP)</text>
 </instance>
 <instance part="R33" gate="G$1" x="259.08" y="-33.02" smashed="yes">
 <attribute name="NAME" x="256.54" y="-30.48" size="1.778" layer="95"/>
-<attribute name="VALUE" x="255.27" y="-36.322" size="1.778" layer="96"/>
 </instance>
 <instance part="R35" gate="G$1" x="274.32" y="-33.02" smashed="yes">
 <attribute name="NAME" x="271.78" y="-30.48" size="1.778" layer="95"/>
-<attribute name="VALUE" x="270.51" y="-36.322" size="1.778" layer="96"/>
 </instance>
 <instance part="C33" gate="G$1" x="281.94" y="-40.64" smashed="yes" rot="R180">
 <attribute name="NAME" x="279.4" y="-38.1" size="1.778" layer="95" rot="R180"/>
-<attribute name="VALUE" x="280.416" y="-35.941" size="1.778" layer="96" rot="R180"/>
 </instance>
-<instance part="C35" gate="G$1" x="289.56" y="-25.4" smashed="yes" rot="R90">
-<attribute name="NAME" x="297.18" y="-22.86" size="1.778" layer="95" rot="R180"/>
-<attribute name="VALUE" x="294.259" y="-23.876" size="1.778" layer="96" rot="R90"/>
+<instance part="C35" gate="G$1" x="285.75" y="-25.4" smashed="yes" rot="R90">
+<attribute name="NAME" x="289.56" y="-24.13" size="1.778" layer="95"/>
 </instance>
 <instance part="C1" gate="G$1" x="-25.4" y="-195.58" smashed="yes">
 <attribute name="NAME" x="-23.876" y="-195.199" size="1.778" layer="95"/>
@@ -17334,7 +17310,6 @@ IN SOFTWARE (PINMODE INPUT_PULLUP)</text>
 </instance>
 <instance part="R24" gate="G$1" x="223.52" y="-81.28" smashed="yes">
 <attribute name="NAME" x="219.71" y="-79.7814" size="1.778" layer="95"/>
-<attribute name="VALUE" x="219.71" y="-84.582" size="1.778" layer="96"/>
 </instance>
 <instance part="GND4" gate="1" x="167.64" y="-43.18" smashed="yes">
 <attribute name="VALUE" x="165.1" y="-45.72" size="1.778" layer="96"/>
@@ -17346,19 +17321,19 @@ IN SOFTWARE (PINMODE INPUT_PULLUP)</text>
 <attribute name="VALUE" x="220.98" y="-5.08" size="1.778" layer="96"/>
 </instance>
 <instance part="R26" gate="G$1" x="223.52" y="-111.76" smashed="yes" rot="R90">
-<attribute name="NAME" x="228.6" y="-111.9886" size="1.778" layer="95" rot="R180"/>
+<attribute name="NAME" x="220.98" y="-111.76" size="1.778" layer="95" rot="R180"/>
 <attribute name="VALUE" x="226.822" y="-115.57" size="1.778" layer="96" rot="R90"/>
 </instance>
 <instance part="R27" gate="G$1" x="223.52" y="-127" smashed="yes" rot="R90">
-<attribute name="NAME" x="228.6" y="-125.9586" size="1.778" layer="95" rot="R180"/>
+<attribute name="NAME" x="220.98" y="-127" size="1.778" layer="95" rot="R180"/>
 <attribute name="VALUE" x="226.822" y="-130.81" size="1.778" layer="96" rot="R90"/>
 </instance>
 <instance part="R28" gate="G$1" x="231.14" y="-100.33" smashed="yes" rot="R270">
-<attribute name="NAME" x="232.6386" y="-96.52" size="1.778" layer="95" rot="R270"/>
+<attribute name="NAME" x="233.68" y="-101.6" size="1.778" layer="95"/>
 <attribute name="VALUE" x="227.838" y="-96.52" size="1.778" layer="96" rot="R270"/>
 </instance>
 <instance part="R30" gate="G$1" x="241.3" y="-109.22" smashed="yes" rot="R180">
-<attribute name="NAME" x="242.57" y="-105.6386" size="1.778" layer="95" rot="R180"/>
+<attribute name="NAME" x="243.84" y="-104.14" size="1.778" layer="95" rot="R180"/>
 <attribute name="VALUE" x="245.11" y="-105.918" size="1.778" layer="96" rot="R180"/>
 </instance>
 <instance part="GND7" gate="1" x="340.106" y="-88.9" smashed="yes">
@@ -17398,19 +17373,19 @@ IN SOFTWARE (PINMODE INPUT_PULLUP)</text>
 <attribute name="VALUE" x="-25.4" y="-99.06" size="1.778" layer="96"/>
 </instance>
 <instance part="R37" gate="G$1" x="302.26" y="-124.46" smashed="yes" rot="R270">
-<attribute name="NAME" x="303.53" y="-122.9614" size="1.778" layer="95"/>
+<attribute name="NAME" x="299.72" y="-124.46" size="1.778" layer="95" rot="R180"/>
 <attribute name="VALUE" x="298.958" y="-120.65" size="1.778" layer="96" rot="R270"/>
 </instance>
 <instance part="R38" gate="G$1" x="302.26" y="-139.7" smashed="yes" rot="R270">
-<attribute name="NAME" x="303.53" y="-138.2014" size="1.778" layer="95"/>
+<attribute name="NAME" x="299.72" y="-139.7" size="1.778" layer="95" rot="R180"/>
 <attribute name="VALUE" x="298.958" y="-135.89" size="1.778" layer="96" rot="R270"/>
 </instance>
 <instance part="R36" gate="G$1" x="302.26" y="-105.41" smashed="yes" rot="R270">
-<attribute name="NAME" x="304.546" y="-102.8954" size="1.778" layer="95"/>
+<attribute name="NAME" x="299.72" y="-104.14" size="1.778" layer="95" rot="R180"/>
 <attribute name="VALUE" x="298.958" y="-101.6" size="1.778" layer="96" rot="R270"/>
 </instance>
 <instance part="R39" gate="G$1" x="317.5" y="-106.68" smashed="yes">
-<attribute name="NAME" x="313.69" y="-105.1814" size="1.778" layer="95"/>
+<attribute name="NAME" x="314.96" y="-104.14" size="1.778" layer="95"/>
 <attribute name="VALUE" x="313.69" y="-109.982" size="1.778" layer="96"/>
 </instance>
 <instance part="IC6" gate="G$1" x="256.54" y="-93.98" smashed="yes">
@@ -17433,7 +17408,7 @@ IN SOFTWARE (PINMODE INPUT_PULLUP)</text>
 <attribute name="VALUE" x="320.04" y="-109.22" size="1.778" layer="96" rot="MR180"/>
 </instance>
 <instance part="R29" gate="G$1" x="238.76" y="-73.66" smashed="yes">
-<attribute name="NAME" x="234.95" y="-72.1614" size="1.778" layer="95"/>
+<attribute name="NAME" x="236.22" y="-71.12" size="1.778" layer="95"/>
 <attribute name="VALUE" x="234.95" y="-76.962" size="1.778" layer="96"/>
 </instance>
 <instance part="LED1" gate="G$1" x="-22.86" y="-85.09" smashed="yes">
@@ -18006,7 +17981,7 @@ IN SOFTWARE (PINMODE INPUT_PULLUP)</text>
 </segment>
 <segment>
 <pinref part="C34" gate="G$1" pin="1"/>
-<wire x1="289.56" y1="17.78" x2="307.34" y2="17.78" width="0.1524" layer="91"/>
+<wire x1="290.83" y1="17.78" x2="307.34" y2="17.78" width="0.1524" layer="91"/>
 <wire x1="307.34" y1="17.78" x2="307.34" y2="7.62" width="0.1524" layer="91"/>
 <pinref part="IC7" gate="A" pin="OUT"/>
 <wire x1="307.34" y1="7.62" x2="304.8" y2="7.62" width="0.1524" layer="91"/>
@@ -18028,7 +18003,7 @@ IN SOFTWARE (PINMODE INPUT_PULLUP)</text>
 </segment>
 <segment>
 <pinref part="C35" gate="G$1" pin="2"/>
-<wire x1="294.64" y1="-25.4" x2="307.34" y2="-25.4" width="0.1524" layer="91"/>
+<wire x1="290.83" y1="-25.4" x2="307.34" y2="-25.4" width="0.1524" layer="91"/>
 <wire x1="307.34" y1="-25.4" x2="307.34" y2="-35.56" width="0.1524" layer="91"/>
 <pinref part="IC7" gate="B" pin="OUT"/>
 <wire x1="307.34" y1="-35.56" x2="304.8" y2="-35.56" width="0.1524" layer="91"/>
@@ -18637,7 +18612,7 @@ IN SOFTWARE (PINMODE INPUT_PULLUP)</text>
 <pinref part="C34" gate="G$1" pin="2"/>
 <wire x1="266.7" y1="10.16" x2="269.24" y2="10.16" width="0.1524" layer="91"/>
 <wire x1="266.7" y1="10.16" x2="266.7" y2="17.78" width="0.1524" layer="91"/>
-<wire x1="266.7" y1="17.78" x2="281.94" y2="17.78" width="0.1524" layer="91"/>
+<wire x1="266.7" y1="17.78" x2="283.21" y2="17.78" width="0.1524" layer="91"/>
 <junction x="266.7" y="10.16"/>
 </segment>
 </net>
@@ -18660,7 +18635,7 @@ IN SOFTWARE (PINMODE INPUT_PULLUP)</text>
 <pinref part="C35" gate="G$1" pin="1"/>
 <wire x1="266.7" y1="-33.02" x2="269.24" y2="-33.02" width="0.1524" layer="91"/>
 <wire x1="266.7" y1="-33.02" x2="266.7" y2="-25.4" width="0.1524" layer="91"/>
-<wire x1="266.7" y1="-25.4" x2="287.02" y2="-25.4" width="0.1524" layer="91"/>
+<wire x1="266.7" y1="-25.4" x2="283.21" y2="-25.4" width="0.1524" layer="91"/>
 <junction x="266.7" y="-33.02"/>
 </segment>
 </net>

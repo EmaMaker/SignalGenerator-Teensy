@@ -6,7 +6,7 @@
 <setting alwaysvectorfont="no"/>
 <setting verticaltext="up"/>
 </settings>
-<grid distance="0.1" unitdist="inch" unit="inch" style="lines" multiple="1" display="yes" altdistance="0.05" altunitdist="inch" altunit="inch"/>
+<grid distance="0.1" unitdist="inch" unit="inch" style="lines" multiple="1" display="yes" altdistance="0.01" altunitdist="inch" altunit="inch"/>
 <layers>
 <layer number="1" name="Top" color="4" fill="1" visible="no" active="no"/>
 <layer number="2" name="Route2" color="1" fill="3" visible="no" active="no"/>
@@ -16952,6 +16952,7 @@ Source: www.kingbright.com</description>
 <part name="C8" library="rcl" library_urn="urn:adsk.eagle:library:334" deviceset="C-EU" device="C0805" package3d_urn="urn:adsk.eagle:package:23617/2" value="1u"/>
 <part name="GND10" library="supply1" library_urn="urn:adsk.eagle:library:371" deviceset="GND" device=""/>
 <part name="GND18" library="supply1" library_urn="urn:adsk.eagle:library:371" deviceset="GND" device=""/>
+<part name="R2" library="rcl" library_urn="urn:adsk.eagle:library:334" deviceset="R-EU_" device="R0805" package3d_urn="urn:adsk.eagle:package:23553/2"/>
 </parts>
 <sheets>
 <sheet>
@@ -17319,9 +17320,9 @@ IN SOFTWARE (PINMODE INPUT_PULLUP)</text>
 <instance part="GND3" gate="1" x="38.1" y="-210.82" smashed="yes">
 <attribute name="VALUE" x="35.56" y="-213.36" size="1.778" layer="96"/>
 </instance>
-<instance part="IC1" gate="A" x="322.58" y="-81.28" smashed="yes" rot="MR180">
-<attribute name="NAME" x="325.12" y="-84.455" size="1.778" layer="95" rot="MR180"/>
-<attribute name="VALUE" x="322.58" y="-76.2" size="1.778" layer="96" rot="MR180"/>
+<instance part="IC1" gate="A" x="307.594" y="-81.28" smashed="yes" rot="MR180">
+<attribute name="NAME" x="310.134" y="-84.455" size="1.778" layer="95" rot="MR180"/>
+<attribute name="VALUE" x="307.594" y="-76.2" size="1.778" layer="96" rot="MR180"/>
 </instance>
 <instance part="IC1" gate="B" x="241.046" y="-83.82" smashed="yes" rot="MR180">
 <attribute name="NAME" x="243.586" y="-86.995" size="1.778" layer="95" rot="MR180"/>
@@ -17468,6 +17469,10 @@ IN SOFTWARE (PINMODE INPUT_PULLUP)</text>
 </instance>
 <instance part="GND18" gate="1" x="-25.4" y="7.62" smashed="yes">
 <attribute name="VALUE" x="-27.94" y="5.08" size="1.778" layer="96"/>
+</instance>
+<instance part="R2" gate="G$1" x="330.2" y="-81.28" smashed="yes">
+<attribute name="NAME" x="326.39" y="-79.7814" size="1.778" layer="95"/>
+<attribute name="VALUE" x="326.39" y="-84.582" size="1.778" layer="96"/>
 </instance>
 </instances>
 <busses>
@@ -18716,7 +18721,7 @@ IN SOFTWARE (PINMODE INPUT_PULLUP)</text>
 <pinref part="IC1" gate="B" pin="OUT"/>
 <wire x1="248.666" y1="-83.82" x2="251.46" y2="-83.82" width="0.1524" layer="91"/>
 <pinref part="IC1" gate="A" pin="+IN"/>
-<wire x1="256.54" y1="-83.82" x2="314.96" y2="-83.82" width="0.1524" layer="91"/>
+<wire x1="256.54" y1="-83.82" x2="299.974" y2="-83.82" width="0.1524" layer="91"/>
 <junction x="256.54" y="-83.82"/>
 </segment>
 </net>
@@ -18850,15 +18855,22 @@ IN SOFTWARE (PINMODE INPUT_PULLUP)</text>
 <net name="N$19" class="1">
 <segment>
 <pinref part="IC1" gate="A" pin="-IN"/>
-<wire x1="314.96" y1="-78.74" x2="312.42" y2="-78.74" width="0.1524" layer="91"/>
-<wire x1="312.42" y1="-78.74" x2="312.42" y2="-73.66" width="0.1524" layer="91"/>
-<pinref part="X1" gate="G$1" pin="1"/>
+<wire x1="299.974" y1="-78.74" x2="297.434" y2="-78.74" width="0.1524" layer="91"/>
+<wire x1="297.434" y1="-78.74" x2="297.434" y2="-73.66" width="0.1524" layer="91"/>
 <pinref part="IC1" gate="A" pin="OUT"/>
-<wire x1="342.646" y1="-81.28" x2="332.74" y2="-81.28" width="0.1524" layer="91"/>
-<wire x1="332.74" y1="-81.28" x2="330.2" y2="-81.28" width="0.1524" layer="91"/>
-<wire x1="312.42" y1="-73.66" x2="332.74" y2="-73.66" width="0.1524" layer="91"/>
-<wire x1="332.74" y1="-73.66" x2="332.74" y2="-81.28" width="0.1524" layer="91"/>
-<junction x="332.74" y="-81.28"/>
+<wire x1="317.754" y1="-81.28" x2="315.214" y2="-81.28" width="0.1524" layer="91"/>
+<wire x1="297.434" y1="-73.66" x2="317.754" y2="-73.66" width="0.1524" layer="91"/>
+<wire x1="317.754" y1="-73.66" x2="317.754" y2="-81.28" width="0.1524" layer="91"/>
+<junction x="317.754" y="-81.28"/>
+<wire x1="325.12" y1="-81.28" x2="317.754" y2="-81.28" width="0.1524" layer="91"/>
+<pinref part="R2" gate="G$1" pin="1"/>
+</segment>
+</net>
+<net name="N$6" class="1">
+<segment>
+<pinref part="X1" gate="G$1" pin="1"/>
+<wire x1="342.646" y1="-81.28" x2="335.28" y2="-81.28" width="0.1524" layer="91"/>
+<pinref part="R2" gate="G$1" pin="2"/>
 </segment>
 </net>
 </nets>
