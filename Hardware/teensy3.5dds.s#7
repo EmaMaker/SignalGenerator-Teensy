@@ -6,7 +6,7 @@
 <setting alwaysvectorfont="no"/>
 <setting verticaltext="up"/>
 </settings>
-<grid distance="0.1" unitdist="inch" unit="inch" style="lines" multiple="1" display="yes" altdistance="0.05" altunitdist="inch" altunit="inch"/>
+<grid distance="0.1" unitdist="inch" unit="inch" style="lines" multiple="1" display="no" altdistance="0.01" altunitdist="inch" altunit="inch"/>
 <layers>
 <layer number="1" name="Top" color="4" fill="1" visible="no" active="no"/>
 <layer number="2" name="Route2" color="1" fill="3" visible="no" active="no"/>
@@ -16835,12 +16835,12 @@ Source: www.kingbright.com</description>
 <part name="S1" library="EC11B15242AE" deviceset="EC11B15242AE" device=""/>
 <part name="GND13" library="supply1" library_urn="urn:adsk.eagle:library:371" deviceset="GND" device=""/>
 <part name="Q2" library="semicon-smd-ipc" library_urn="urn:adsk.eagle:library:353" deviceset="NPN-TRANSISTIOR-2COL" device="SOT89" package3d_urn="urn:adsk.eagle:package:26313/1"/>
-<part name="S2" library="prme15005" deviceset="PRME_15005" device="SOCKET"/>
-<part name="S3" library="prme15005" deviceset="PRME_15005" device="SOCKET"/>
+<part name="RL1" library="prme15005" deviceset="PRME_15005" device="SOCKET"/>
+<part name="RL2" library="prme15005" deviceset="PRME_15005" device="SOCKET"/>
 <part name="Q3" library="semicon-smd-ipc" library_urn="urn:adsk.eagle:library:353" deviceset="NPN-TRANSISTIOR-2COL" device="SOT89" package3d_urn="urn:adsk.eagle:package:26313/1"/>
 <part name="GND14" library="supply1" library_urn="urn:adsk.eagle:library:371" deviceset="GND" device=""/>
 <part name="GND15" library="supply1" library_urn="urn:adsk.eagle:library:371" deviceset="GND" device=""/>
-<part name="SV1" library="con-lstb" library_urn="urn:adsk.eagle:library:162" deviceset="MA03-2" device="" package3d_urn="urn:adsk.eagle:package:8334/1"/>
+<part name="J_SPI" library="con-lstb" library_urn="urn:adsk.eagle:library:162" deviceset="MA03-2" device="" package3d_urn="urn:adsk.eagle:package:8334/1"/>
 <part name="GND12" library="supply1" library_urn="urn:adsk.eagle:library:371" deviceset="GND" device=""/>
 <part name="P+3" library="supply1" library_urn="urn:adsk.eagle:library:371" deviceset="+5V" device=""/>
 <part name="GND1" library="supply1" library_urn="urn:adsk.eagle:library:371" deviceset="GND" device=""/>
@@ -16849,9 +16849,9 @@ Source: www.kingbright.com</description>
 <part name="P+2" library="supply1" library_urn="urn:adsk.eagle:library:371" deviceset="+5V" device=""/>
 <part name="J2" library="1776275-2" deviceset="1776275-2" device=""/>
 <part name="J1" library="1776275-2" deviceset="1776275-2" device=""/>
-<part name="SV2" library="con-lstb" library_urn="urn:adsk.eagle:library:162" deviceset="MA03-1" device="" package3d_urn="urn:adsk.eagle:package:8339/1"/>
-<part name="SV3" library="con-lstb" library_urn="urn:adsk.eagle:library:162" deviceset="MA03-1" device="" package3d_urn="urn:adsk.eagle:package:8339/1"/>
-<part name="SV4" library="con-lstb" library_urn="urn:adsk.eagle:library:162" deviceset="MA04-1" device="" package3d_urn="urn:adsk.eagle:package:8337/1"/>
+<part name="J_DAC0_OUT" library="con-lstb" library_urn="urn:adsk.eagle:library:162" deviceset="MA03-1" device="" package3d_urn="urn:adsk.eagle:package:8339/1"/>
+<part name="J_SQUARE_OUT" library="con-lstb" library_urn="urn:adsk.eagle:library:162" deviceset="MA03-1" device="" package3d_urn="urn:adsk.eagle:package:8339/1"/>
+<part name="J_DISPLAY" library="con-lstb" library_urn="urn:adsk.eagle:library:162" deviceset="MA04-1" device="" package3d_urn="urn:adsk.eagle:package:8337/1"/>
 <part name="X1" library="con-coax" library_urn="urn:adsk.eagle:library:133" deviceset="?227161*" device="1-" package3d_urn="urn:adsk.eagle:package:6212/1" technology="-0"/>
 <part name="IC1" library="linear" library_urn="urn:adsk.eagle:library:262" deviceset="TL082" device="D" package3d_urn="urn:adsk.eagle:package:16404/2" value="AD8034"/>
 <part name="R9" library="rcl" library_urn="urn:adsk.eagle:library:334" deviceset="R-EU_" device="R0805" package3d_urn="urn:adsk.eagle:package:23553/2"/>
@@ -17013,10 +17013,10 @@ IN SOFTWARE (PINMODE INPUT_PULLUP)</text>
 <attribute name="NAME" x="162.56" y="-96.52" size="1.778" layer="95"/>
 <attribute name="VALUE" x="149.86" y="-91.44" size="1.778" layer="96"/>
 </instance>
-<instance part="S2" gate="G$1" x="179.07" y="-83.82" smashed="yes">
+<instance part="RL1" gate="G$1" x="179.07" y="-83.82" smashed="yes">
 <attribute name="NAME" x="173.99" y="-78.74" size="1.27" layer="95"/>
 </instance>
-<instance part="S3" gate="G$1" x="179.07" y="-127" smashed="yes">
+<instance part="RL2" gate="G$1" x="179.07" y="-127" smashed="yes">
 <attribute name="NAME" x="173.99" y="-121.92" size="1.27" layer="95"/>
 </instance>
 <instance part="Q3" gate="G$1" x="160.02" y="-139.7" smashed="yes">
@@ -17029,7 +17029,7 @@ IN SOFTWARE (PINMODE INPUT_PULLUP)</text>
 <instance part="GND15" gate="1" x="162.56" y="-106.68" smashed="yes">
 <attribute name="VALUE" x="160.02" y="-109.22" size="1.778" layer="96"/>
 </instance>
-<instance part="SV1" gate="1" x="142.24" y="-172.72" smashed="yes">
+<instance part="J_SPI" gate="1" x="142.24" y="-172.72" smashed="yes">
 <attribute name="VALUE" x="138.43" y="-180.34" size="1.778" layer="96"/>
 <attribute name="NAME" x="138.43" y="-166.878" size="1.778" layer="95"/>
 </instance>
@@ -17057,15 +17057,15 @@ IN SOFTWARE (PINMODE INPUT_PULLUP)</text>
 <instance part="J1" gate="G$1" x="182.88" y="-172.72" smashed="yes" rot="R180">
 <attribute name="NAME" x="168.91" y="-165.1" size="1.778" layer="95" rot="R180" align="center-left"/>
 </instance>
-<instance part="SV2" gate="G$1" x="220.98" y="-172.72" smashed="yes">
+<instance part="J_DAC0_OUT" gate="G$1" x="220.98" y="-172.72" smashed="yes">
 <attribute name="VALUE" x="219.71" y="-180.34" size="1.778" layer="96"/>
 <attribute name="NAME" x="219.71" y="-166.878" size="1.778" layer="95"/>
 </instance>
-<instance part="SV3" gate="G$1" x="254" y="-172.72" smashed="yes">
+<instance part="J_SQUARE_OUT" gate="G$1" x="254" y="-172.72" smashed="yes">
 <attribute name="VALUE" x="252.73" y="-180.34" size="1.778" layer="96"/>
 <attribute name="NAME" x="252.73" y="-166.878" size="1.778" layer="95"/>
 </instance>
-<instance part="SV4" gate="1" x="294.64" y="-170.18" smashed="yes">
+<instance part="J_DISPLAY" gate="1" x="294.64" y="-170.18" smashed="yes">
 <attribute name="VALUE" x="293.37" y="-180.34" size="1.778" layer="96"/>
 <attribute name="NAME" x="293.37" y="-164.338" size="1.778" layer="95"/>
 </instance>
@@ -17512,7 +17512,7 @@ IN SOFTWARE (PINMODE INPUT_PULLUP)</text>
 <junction x="-20.32" y="-157.48"/>
 </segment>
 <segment>
-<pinref part="SV1" gate="1" pin="1"/>
+<pinref part="J_SPI" gate="1" pin="1"/>
 <pinref part="GND12" gate="1" pin="GND"/>
 <wire x1="149.86" y1="-175.26" x2="154.94" y2="-175.26" width="0.1524" layer="91"/>
 <wire x1="154.94" y1="-175.26" x2="154.94" y2="-177.8" width="0.1524" layer="91"/>
@@ -17524,7 +17524,7 @@ IN SOFTWARE (PINMODE INPUT_PULLUP)</text>
 <wire x1="190.5" y1="-172.72" x2="193.04" y2="-172.72" width="0.1524" layer="91"/>
 </segment>
 <segment>
-<pinref part="SV4" gate="1" pin="4"/>
+<pinref part="J_DISPLAY" gate="1" pin="4"/>
 <wire x1="302.26" y1="-167.64" x2="309.88" y2="-167.64" width="0.1524" layer="91"/>
 <label x="304.8" y="-167.64" size="1.778" layer="95"/>
 </segment>
@@ -17770,7 +17770,7 @@ IN SOFTWARE (PINMODE INPUT_PULLUP)</text>
 <label x="220.98" y="-106.68" size="1.778" layer="95"/>
 </segment>
 <segment>
-<pinref part="S2" gate="G$1" pin="SW+"/>
+<pinref part="RL1" gate="G$1" pin="SW+"/>
 <wire x1="166.37" y1="-81.28" x2="166.37" y2="-78.74" width="0.1524" layer="91"/>
 <wire x1="166.37" y1="-78.74" x2="162.56" y2="-78.74" width="0.1524" layer="91"/>
 <pinref part="P+5" gate="1" pin="V+"/>
@@ -17783,7 +17783,7 @@ IN SOFTWARE (PINMODE INPUT_PULLUP)</text>
 <pinref part="P+6" gate="1" pin="V+"/>
 <pinref part="D2" gate="G$1" pin="C"/>
 <wire x1="162.56" y1="-119.38" x2="162.56" y2="-121.92" width="0.1524" layer="91"/>
-<pinref part="S3" gate="G$1" pin="SW+"/>
+<pinref part="RL2" gate="G$1" pin="SW+"/>
 <wire x1="162.56" y1="-121.92" x2="162.56" y2="-124.46" width="0.1524" layer="91"/>
 <wire x1="162.56" y1="-121.92" x2="166.37" y2="-121.92" width="0.1524" layer="91"/>
 <wire x1="166.37" y1="-121.92" x2="166.37" y2="-124.46" width="0.1524" layer="91"/>
@@ -17925,7 +17925,7 @@ IN SOFTWARE (PINMODE INPUT_PULLUP)</text>
 <junction x="-17.78" y="-68.58"/>
 </segment>
 <segment>
-<pinref part="SV1" gate="1" pin="5"/>
+<pinref part="J_SPI" gate="1" pin="5"/>
 <pinref part="P+3" gate="1" pin="+5V"/>
 <wire x1="149.86" y1="-170.18" x2="154.94" y2="-170.18" width="0.1524" layer="91"/>
 <wire x1="154.94" y1="-170.18" x2="154.94" y2="-165.1" width="0.1524" layer="91"/>
@@ -17937,7 +17937,7 @@ IN SOFTWARE (PINMODE INPUT_PULLUP)</text>
 <wire x1="190.5" y1="-170.18" x2="190.5" y2="-165.1" width="0.1524" layer="91"/>
 </segment>
 <segment>
-<pinref part="SV4" gate="1" pin="3"/>
+<pinref part="J_DISPLAY" gate="1" pin="3"/>
 <wire x1="302.26" y1="-170.18" x2="309.88" y2="-170.18" width="0.1524" layer="91"/>
 <label x="304.8" y="-170.18" size="1.778" layer="95"/>
 </segment>
@@ -17982,7 +17982,7 @@ IN SOFTWARE (PINMODE INPUT_PULLUP)</text>
 </net>
 <net name="DAC0_OFFSET" class="1">
 <segment>
-<pinref part="SV2" gate="G$1" pin="3"/>
+<pinref part="J_DAC0_OUT" gate="G$1" pin="3"/>
 <wire x1="228.6" y1="-170.18" x2="238.76" y2="-170.18" width="0.1524" layer="91"/>
 <label x="228.6" y="-170.18" size="1.778" layer="95"/>
 </segment>
@@ -18000,7 +18000,7 @@ IN SOFTWARE (PINMODE INPUT_PULLUP)</text>
 </net>
 <net name="DAC0_FILTERED" class="1">
 <segment>
-<pinref part="SV2" gate="G$1" pin="1"/>
+<pinref part="J_DAC0_OUT" gate="G$1" pin="1"/>
 <wire x1="228.6" y1="-175.26" x2="238.76" y2="-175.26" width="0.1524" layer="91"/>
 <label x="228.6" y="-175.26" size="1.778" layer="95"/>
 </segment>
@@ -18022,7 +18022,7 @@ IN SOFTWARE (PINMODE INPUT_PULLUP)</text>
 </net>
 <net name="SQUARE_FILTERED" class="1">
 <segment>
-<pinref part="SV3" gate="G$1" pin="1"/>
+<pinref part="J_SQUARE_OUT" gate="G$1" pin="1"/>
 <wire x1="261.62" y1="-175.26" x2="271.78" y2="-175.26" width="0.1524" layer="91"/>
 <label x="261.62" y="-175.26" size="1.778" layer="95"/>
 </segment>
@@ -18044,7 +18044,7 @@ IN SOFTWARE (PINMODE INPUT_PULLUP)</text>
 </net>
 <net name="SQUARE_OFFSET" class="1">
 <segment>
-<pinref part="SV3" gate="G$1" pin="3"/>
+<pinref part="J_SQUARE_OUT" gate="G$1" pin="3"/>
 <wire x1="261.62" y1="-170.18" x2="271.78" y2="-170.18" width="0.1524" layer="91"/>
 <label x="261.62" y="-170.18" size="1.778" layer="95"/>
 </segment>
@@ -18083,7 +18083,7 @@ IN SOFTWARE (PINMODE INPUT_PULLUP)</text>
 <label x="58.42" y="-142.24" size="1.778" layer="95"/>
 </segment>
 <segment>
-<pinref part="SV1" gate="1" pin="2"/>
+<pinref part="J_SPI" gate="1" pin="2"/>
 <wire x1="134.62" y1="-175.26" x2="129.54" y2="-175.26" width="0.1524" layer="91"/>
 <label x="129.54" y="-175.26" size="1.778" layer="95"/>
 </segment>
@@ -18095,7 +18095,7 @@ IN SOFTWARE (PINMODE INPUT_PULLUP)</text>
 <label x="55.88" y="-139.7" size="1.778" layer="95"/>
 </segment>
 <segment>
-<pinref part="SV1" gate="1" pin="4"/>
+<pinref part="J_SPI" gate="1" pin="4"/>
 <wire x1="134.62" y1="-172.72" x2="129.54" y2="-172.72" width="0.1524" layer="91"/>
 <label x="129.54" y="-172.72" size="1.778" layer="95"/>
 </segment>
@@ -18107,7 +18107,7 @@ IN SOFTWARE (PINMODE INPUT_PULLUP)</text>
 <label x="55.88" y="-137.16" size="1.778" layer="95"/>
 </segment>
 <segment>
-<pinref part="SV1" gate="1" pin="6"/>
+<pinref part="J_SPI" gate="1" pin="6"/>
 <wire x1="134.62" y1="-170.18" x2="129.54" y2="-170.18" width="0.1524" layer="91"/>
 <label x="129.54" y="-170.18" size="1.778" layer="95"/>
 </segment>
@@ -18119,7 +18119,7 @@ IN SOFTWARE (PINMODE INPUT_PULLUP)</text>
 <label x="55.88" y="-134.62" size="1.778" layer="95"/>
 </segment>
 <segment>
-<pinref part="SV1" gate="1" pin="3"/>
+<pinref part="J_SPI" gate="1" pin="3"/>
 <wire x1="149.86" y1="-172.72" x2="154.94" y2="-172.72" width="0.1524" layer="91"/>
 <label x="149.86" y="-172.72" size="1.778" layer="95"/>
 </segment>
@@ -18171,7 +18171,7 @@ IN SOFTWARE (PINMODE INPUT_PULLUP)</text>
 <label x="55.88" y="-162.56" size="1.778" layer="95"/>
 </segment>
 <segment>
-<pinref part="SV4" gate="1" pin="2"/>
+<pinref part="J_DISPLAY" gate="1" pin="2"/>
 <wire x1="302.26" y1="-172.72" x2="309.88" y2="-172.72" width="0.1524" layer="91"/>
 <label x="304.8" y="-172.72" size="1.778" layer="95"/>
 </segment>
@@ -18183,7 +18183,7 @@ IN SOFTWARE (PINMODE INPUT_PULLUP)</text>
 <label x="55.88" y="-165.1" size="1.778" layer="95"/>
 </segment>
 <segment>
-<pinref part="SV4" gate="1" pin="1"/>
+<pinref part="J_DISPLAY" gate="1" pin="1"/>
 <wire x1="302.26" y1="-175.26" x2="309.88" y2="-175.26" width="0.1524" layer="91"/>
 <label x="304.8" y="-175.26" size="1.778" layer="95"/>
 </segment>
@@ -18304,24 +18304,24 @@ IN SOFTWARE (PINMODE INPUT_PULLUP)</text>
 </net>
 <net name="DAC0_OUT" class="1">
 <segment>
-<pinref part="SV2" gate="G$1" pin="2"/>
+<pinref part="J_DAC0_OUT" gate="G$1" pin="2"/>
 <wire x1="228.6" y1="-172.72" x2="238.76" y2="-172.72" width="0.1524" layer="91"/>
 <label x="228.6" y="-172.72" size="1.778" layer="95"/>
 </segment>
 <segment>
-<pinref part="S3" gate="G$1" pin="SIG+"/>
+<pinref part="RL2" gate="G$1" pin="SIG+"/>
 <wire x1="191.77" y1="-124.46" x2="208.28" y2="-124.46" width="0.1524" layer="91"/>
 <label x="196.85" y="-124.46" size="1.778" layer="95"/>
 </segment>
 </net>
 <net name="SQUARE_OUT" class="1">
 <segment>
-<pinref part="SV3" gate="G$1" pin="2"/>
+<pinref part="J_SQUARE_OUT" gate="G$1" pin="2"/>
 <wire x1="261.62" y1="-172.72" x2="271.78" y2="-172.72" width="0.1524" layer="91"/>
 <label x="261.62" y="-172.72" size="1.778" layer="95"/>
 </segment>
 <segment>
-<pinref part="S2" gate="G$1" pin="SIG+"/>
+<pinref part="RL1" gate="G$1" pin="SIG+"/>
 <wire x1="191.77" y1="-81.28" x2="205.74" y2="-81.28" width="0.1524" layer="91"/>
 <label x="193.04" y="-81.28" size="1.778" layer="95"/>
 </segment>
@@ -18734,8 +18734,8 @@ IN SOFTWARE (PINMODE INPUT_PULLUP)</text>
 <wire x1="213.36" y1="-81.28" x2="218.44" y2="-81.28" width="0.1524" layer="91"/>
 <wire x1="191.77" y1="-86.36" x2="213.36" y2="-86.36" width="0.1524" layer="91"/>
 <junction x="213.36" y="-86.36"/>
-<pinref part="S2" gate="G$1" pin="SIG-"/>
-<pinref part="S3" gate="G$1" pin="SIG-"/>
+<pinref part="RL1" gate="G$1" pin="SIG-"/>
+<pinref part="RL2" gate="G$1" pin="SIG-"/>
 </segment>
 </net>
 <net name="N$11" class="1">
@@ -18778,7 +18778,7 @@ IN SOFTWARE (PINMODE INPUT_PULLUP)</text>
 <pinref part="Q2" gate="G$1" pin="C"/>
 <pinref part="D1" gate="G$1" pin="A"/>
 <wire x1="162.56" y1="-91.44" x2="162.56" y2="-88.9" width="0.1524" layer="91"/>
-<pinref part="S2" gate="G$1" pin="SW-"/>
+<pinref part="RL1" gate="G$1" pin="SW-"/>
 <wire x1="162.56" y1="-88.9" x2="162.56" y2="-86.36" width="0.1524" layer="91"/>
 <wire x1="162.56" y1="-88.9" x2="166.37" y2="-88.9" width="0.1524" layer="91"/>
 <wire x1="166.37" y1="-88.9" x2="166.37" y2="-86.36" width="0.1524" layer="91"/>
@@ -18790,7 +18790,7 @@ IN SOFTWARE (PINMODE INPUT_PULLUP)</text>
 <pinref part="Q3" gate="G$1" pin="C"/>
 <pinref part="D2" gate="G$1" pin="A"/>
 <wire x1="162.56" y1="-134.62" x2="162.56" y2="-132.08" width="0.1524" layer="91"/>
-<pinref part="S3" gate="G$1" pin="SW-"/>
+<pinref part="RL2" gate="G$1" pin="SW-"/>
 <wire x1="162.56" y1="-132.08" x2="162.56" y2="-129.54" width="0.1524" layer="91"/>
 <wire x1="162.56" y1="-132.08" x2="166.37" y2="-132.08" width="0.1524" layer="91"/>
 <wire x1="166.37" y1="-132.08" x2="166.37" y2="-129.54" width="0.1524" layer="91"/>
