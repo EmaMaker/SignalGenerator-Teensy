@@ -30,6 +30,9 @@ typedef int16_t __attribute__((__may_alias__)) aliased_int16_t;
 
 FASTRUN void generateSine(float frequency){
     startGenerating();
+    
+    digitalWriteFast(DAC0_SEL, HIGH);
+    digitalWriteFast(DAC1_SEL, LOW);  
 
     // Phase accumulator
     float phase = 0;

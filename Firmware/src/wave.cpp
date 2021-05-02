@@ -4,6 +4,9 @@
 #include "wave.h"
 
 void setupWaves(){
+  pinMode(DAC0_SEL, OUTPUT);
+  pinMode(DAC1_SEL, OUTPUT);
+
   // Info from teensy forum, access cycle counter. This will be needed for square waves in particular
   ARM_DEMCR |= ARM_DEMCR_TRCENA;
   ARM_DWT_CTRL |= ARM_DWT_CTRL_CYCCNTENA;

@@ -11,6 +11,9 @@ Lower frequency waves using nanoseconds is not needed and could actually causes 
 // Use FASTRUN to run code in RAM
 FASTRUN void generateSquare(float frequency, int duty){
 
+  digitalWriteFast(DAC1_SEL, HIGH);
+  digitalWriteFast(DAC0_SEL, LOW);
+
     startGenerating();
     if(frequency < 1000){
       unsigned long periodMS = (1/ frequency) * pow(10, 6);      
@@ -42,5 +45,39 @@ FASTRUN void generateSquare(float frequency, int duty){
           delayCycles(dutyLowCycles);
       }
     }
+}
 
+FASTRUN void generateSquareDAC1(float frequency, int duty){
+
+    startGenerating();
+    if(frequency < 1000){
+      unsigned long periodMS = (1/ frequency) * pow(10, 6);      
+      unsigned long dutyHigh = periodMS * duty * 0.01;
+      unsigned long dutyLow = periodMS * duty * 0.01;
+
+      while(generateWave){
+          analogWriteDAC1(MAX_VALUE);
+          delayMicroseconds(dutyHigh);
+          analogWriteDAC1(0);
+          delayMicroseconds(dutyLow);
+      }
+
+    }else{
+      unsigned long periodNS = (1/ frequency) * pow(10, 9);
+
+      //Duration of the logic HIGH level
+      unsigned long dutyHigh = periodNS * duty * 0.01;
+      //Duration of the logic LOW level
+      unsigned long dutyLow = periodNS - dutyHigh;
+
+      unsigned long dutyHighCycles = (unsigned long) (dutyHigh/CLOCK_TO_NS);
+      unsigned long dutyLowCycles = (unsigned long)(dutyLow/CLOCK_TO_NS);
+
+      while(generateWave){
+          analogWriteDAC1(MAX_VALUE);
+          delayCycles(dutyHighCycles);
+          analogWriteDAC1(0);
+          delayCycles(dutyLowCycles);
+      }
+    }
 }

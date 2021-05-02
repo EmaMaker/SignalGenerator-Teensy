@@ -4,11 +4,15 @@
 #include "sine.h"
 
 void setup() {
+  pinMode(LED_BUILTIN, OUTPUT);
+  digitalWrite(LED_BUILTIN, HIGH);
+
+
   setupWaves();
   setupSine();
   setupSquare();
 }
 
 FASTRUN void loop() {
-  generateSine(1000000);
+  generateSine(8150);
 }
