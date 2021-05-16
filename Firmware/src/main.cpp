@@ -14,5 +14,5 @@ void setup() {
 }
 
 FASTRUN void loop() {
-  generateSine(8150);
+  generateSquareDAC1(1000000, 50);
 }

@@ -11,8 +11,8 @@ Lower frequency waves using nanoseconds is not needed and could actually causes 
 // Use FASTRUN to run code in RAM
 FASTRUN void generateSquare(float frequency, int duty){
 
-  digitalWriteFast(DAC1_SEL, HIGH);
-  digitalWriteFast(DAC0_SEL, LOW);
+    digitalWriteFast(DAC0_SEL, LOW); 
+    digitalWriteFast(DAC1_SEL, HIGH); 
 
     startGenerating();
     if(frequency < 1000){
@@ -48,6 +48,9 @@ FASTRUN void generateSquare(float frequency, int duty){
 }
 
 FASTRUN void generateSquareDAC1(float frequency, int duty){
+    
+    digitalWriteFast(DAC0_SEL, LOW); 
+    digitalWriteFast(DAC1_SEL, HIGH); 
 
     startGenerating();
     if(frequency < 1000){
