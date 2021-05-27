@@ -40,6 +40,8 @@ void setup() {
   Serial1.begin(9600);
 
   pinMode(PUSHBUTTON, INPUT);
+  pinMode(LED_BUILTIN, OUTPUT);
+  pinMode(4, OUTPUT);
   
   lcd.init();
   lcd.backlight();
@@ -175,13 +177,13 @@ void communicateChanges(){
   //First: toggle the interrupt pin until a positive response is received from teensy
   unsigned long t1 = millis();
   boolean b = false;
-  
+
+  digitalWrite(LED_BUILTIN, HIGH);
   while(Serial1.read() != 42){  //The answer to Life, Universe, And Everything Else
-    if(millis() - t1 > 500){
+    if(millis() - t1 > 100){
       b = !b;
       t1 = millis();
-      if(b) INTERRUPT_ON;
-      else INTERRUPT_OFF; 
+      digitalWrite(4, b);
     }
   }
   
@@ -214,6 +216,7 @@ void communicateChanges(){
       t1 = millis();
     }
   }
+  digitalWrite(LED_BUILTIN, LOW);
 }
 
 

@@ -8,8 +8,8 @@
         {
             "name": "PlatformIO",
             "includePath": [
-                "/home/emamaker/pi_server/Projects/FunctionGenerator/FunctionGen-Teensy/Teensy3.5DDS/Firmware/include",
-                "/home/emamaker/pi_server/Projects/FunctionGenerator/FunctionGen-Teensy/Teensy3.5DDS/Firmware/src",
+                "/home/emamaker/Teensy3.5DDS/Firmware/Teensy/include",
+                "/home/emamaker/Teensy3.5DDS/Firmware/Teensy/src",
                 "/home/emamaker/.platformio/packages/framework-arduinoteensy/cores/teensy3",
                 "/home/emamaker/.platformio/packages/framework-arduinoteensy/libraries/ADC",
                 "/home/emamaker/.platformio/packages/framework-arduinoteensy/libraries/AccelStepper/src",
@@ -108,13 +108,14 @@
                 "/home/emamaker/.platformio/packages/framework-arduinoteensy/libraries/ks0108",
                 "/home/emamaker/.platformio/packages/framework-arduinoteensy/libraries/ssd1351",
                 "/home/emamaker/.platformio/packages/framework-arduinoteensy/libraries/x10",
+                "/home/emamaker/.platformio/packages/tool-unity",
                 ""
             ],
             "browse": {
                 "limitSymbolsToIncludedHeaders": true,
                 "path": [
-                    "/home/emamaker/pi_server/Projects/FunctionGenerator/FunctionGen-Teensy/Teensy3.5DDS/Firmware/include",
-                    "/home/emamaker/pi_server/Projects/FunctionGenerator/FunctionGen-Teensy/Teensy3.5DDS/Firmware/src",
+                    "/home/emamaker/Teensy3.5DDS/Firmware/Teensy/include",
+                    "/home/emamaker/Teensy3.5DDS/Firmware/Teensy/src",
                     "/home/emamaker/.platformio/packages/framework-arduinoteensy/cores/teensy3",
                     "/home/emamaker/.platformio/packages/framework-arduinoteensy/libraries/ADC",
                     "/home/emamaker/.platformio/packages/framework-arduinoteensy/libraries/AccelStepper/src",
@@ -213,6 +214,7 @@
                     "/home/emamaker/.platformio/packages/framework-arduinoteensy/libraries/ks0108",
                     "/home/emamaker/.platformio/packages/framework-arduinoteensy/libraries/ssd1351",
                     "/home/emamaker/.platformio/packages/framework-arduinoteensy/libraries/x10",
+                    "/home/emamaker/.platformio/packages/tool-unity",
                     ""
                 ]
             },
@@ -220,14 +222,12 @@
                 "PLATFORMIO=50101",
                 "__MK64FX512__",
                 "ARDUINO_TEENSY35",
-                "TEENSY_OPT_FASTEST_PURE_CODE_LTO",
                 "USB_SERIAL",
                 "ARDUINO=10805",
                 "TEENSYDUINO=153",
                 "CORE_TEENSY",
-                "F_CPU=168000000L",
+                "F_CPU=120000000L",
                 "LAYOUT_US_ENGLISH",
-                "__PURE_CODE__",
                 ""
             ],
             "cppStandard": "c++14",
@@ -237,7 +237,6 @@
                 "-mcpu=cortex-m4",
                 "-mfloat-abi=hard",
                 "-mfpu=fpv4-sp-d16",
-                "-mpure-code",
                 ""
             ]
         }
