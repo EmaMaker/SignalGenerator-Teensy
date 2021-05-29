@@ -26,15 +26,18 @@ void setup() {
 
 void loop() {
   if(receivingInfo){
+
     Serial1.write(42);  //The answer to life, universe and everything else
     digitalWriteFast(LED_BUILTIN, HIGH);
+
+    Serial1.flush();
 
     delay(1000);
     receivingInfo = false;
     valid_flag = false;
 
     while(!valid_flag){
-      s = Serial1.readStringUntil('W');
+      while(Serial1.available()) s = Serial1.readStringUntil('W');
       Serial.println(s);
       //Check if it's a valid string, it should start with 'w'
       if(!s.startsWith('w')) continue;
@@ -51,8 +54,6 @@ void loop() {
 
       for(int i = 0; i < 100; i++) Serial1.write(69);
       valid_flag = true;
-
-      Serial1.flush();
 
       valid_flag = true;
       Serial.print("Type: " );

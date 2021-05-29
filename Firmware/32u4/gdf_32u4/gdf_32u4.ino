@@ -25,8 +25,8 @@
 /*----------------*/
 
 /*INFO*/
-unsigned long frequency = 1000, duty = 50, type = 1;
-float Vpp = 24.0, Voff = 12.0;
+unsigned long frequency = 1000, duty = 50, type = 0;
+float Vpp = 6.4, Voff = 0.0;
 /*-----------*/
 
 int pushbutton, old_pushbutton;
@@ -117,6 +117,7 @@ void editMode(){
         break;
     }
   }else if(editing_step == 1) {
+    if(type!=1) editing_step++;
     currently_editing = &duty;
     lcd.setCursor(0,0);
     lcd.print("Duty: ");
@@ -178,6 +179,7 @@ void communicateChanges(){
   unsigned long t1 = millis();
   boolean b = false;
 
+  Serial1.flush();
   digitalWrite(LED_BUILTIN, HIGH);
   while(Serial1.read() != 42){  //The answer to Life, Universe, And Everything Else
     if(millis() - t1 > 100){
@@ -206,6 +208,8 @@ void communicateChanges(){
   lcd.clear();
   
   //Built the string with the info and set it to the teensy until a positive response is received
+  Serial1.flush();
+  
   while(Serial1.read() != 69){
     if(millis() - t1 > 250){
   

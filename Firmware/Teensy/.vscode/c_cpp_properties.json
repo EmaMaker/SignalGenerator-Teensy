@@ -222,12 +222,14 @@
                 "PLATFORMIO=50101",
                 "__MK64FX512__",
                 "ARDUINO_TEENSY35",
+                "TEENSY_OPT_FASTEST_PURE_CODE_LTO",
                 "USB_SERIAL",
                 "ARDUINO=10805",
                 "TEENSYDUINO=153",
                 "CORE_TEENSY",
-                "F_CPU=120000000L",
+                "F_CPU=168000000L",
                 "LAYOUT_US_ENGLISH",
+                "__PURE_CODE__",
                 ""
             ],
             "cppStandard": "c++14",
@@ -237,6 +239,7 @@
                 "-mcpu=cortex-m4",
                 "-mfloat-abi=hard",
                 "-mfpu=fpv4-sp-d16",
+                "-mpure-code",
                 ""
             ]
         }
