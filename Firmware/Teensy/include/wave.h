@@ -8,8 +8,8 @@
 #define extr extern
 #endif
 
-#define MAX_VALUE 4096
-#define MAX_VALUE_HALF 2048
+#define MAX_VALUE 512
+#define MAX_VALUE_HALF 256
 
 //How much time (nanoseconds) is required for an analogWriteDAC0() call
 #define ANALOG_WRITE_TIME_NS 477
@@ -18,8 +18,7 @@
 // How much time a single clock cycle takes
 #define CLOCK_TO_NS 9
 // Overhead when counting cycles
-#define CYCLE_OVERHEAD 0
-
+#define CYCLE_OVERHEAD 12
 
 #define DAC1_SEL 23
 #define DAC0_SEL 22

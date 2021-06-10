@@ -15,7 +15,7 @@ FASTRUN void generateSquare(float frequency, int duty){
     digitalWriteFast(DAC1_SEL, HIGH); 
 
     startGenerating();
-    if(frequency < 1000){
+    if(frequency < 100000){
       unsigned long periodMS = (1/ frequency) * pow(10, 6);      
       unsigned long dutyHigh = periodMS * duty * 0.01;
       unsigned long dutyLow = periodMS * duty * 0.01;
@@ -35,8 +35,8 @@ FASTRUN void generateSquare(float frequency, int duty){
       //Duration of the logic LOW level
       unsigned long dutyLow = periodNS - dutyHigh;
 
-      unsigned long dutyHighCycles = (unsigned long) (dutyHigh/CLOCK_TO_NS);
-      unsigned long dutyLowCycles = (unsigned long)(dutyLow/CLOCK_TO_NS);
+      unsigned long dutyHighCycles = (unsigned long) (dutyHigh/CLOCK_TO_NS+0.5f);
+      unsigned long dutyLowCycles = (unsigned long) (dutyLow/CLOCK_TO_NS+0.5f);
 
       while(generateWave){
           digitalWriteFast(SQUARE_PIN, HIGH);
@@ -53,7 +53,7 @@ FASTRUN void generateSquareDAC1(float frequency, int duty){
     digitalWriteFast(DAC1_SEL, HIGH); 
 
     startGenerating();
-    if(frequency < 1000){
+    if(frequency <= 50000){
       unsigned long periodMS = (1/ frequency) * pow(10, 6);      
       unsigned long dutyHigh = periodMS * duty * 0.01;
       unsigned long dutyLow = periodMS * duty * 0.01;
@@ -73,8 +73,8 @@ FASTRUN void generateSquareDAC1(float frequency, int duty){
       //Duration of the logic LOW level
       unsigned long dutyLow = periodNS - dutyHigh;
 
-      unsigned long dutyHighCycles = (unsigned long) (dutyHigh/CLOCK_TO_NS);
-      unsigned long dutyLowCycles = (unsigned long)(dutyLow/CLOCK_TO_NS);
+      unsigned long dutyHighCycles = (unsigned long) (dutyHigh/CLOCK_TO_NS+0.5f);
+      unsigned long dutyLowCycles = (unsigned long) (dutyLow/CLOCK_TO_NS+0.5f);
 
       while(generateWave){
           analogWriteDAC1(MAX_VALUE);
