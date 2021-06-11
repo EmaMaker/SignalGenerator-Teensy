@@ -8,8 +8,8 @@
         {
             "name": "PlatformIO",
             "includePath": [
-                "/home/emamaker/Teensy3.5DDS/Firmware/Teensy/include",
-                "/home/emamaker/Teensy3.5DDS/Firmware/Teensy/src",
+                "/home/emamaker/Documents/Projects/FunctionGenerator/FunctionGen-Teensy/Teensy3.5-DDS/Firmware/Teensy/include",
+                "/home/emamaker/Documents/Projects/FunctionGenerator/FunctionGen-Teensy/Teensy3.5-DDS/Firmware/Teensy/src",
                 "/home/emamaker/.platformio/packages/framework-arduinoteensy/cores/teensy3",
                 "/home/emamaker/.platformio/packages/framework-arduinoteensy/libraries/ADC",
                 "/home/emamaker/.platformio/packages/framework-arduinoteensy/libraries/AccelStepper/src",
@@ -108,14 +108,13 @@
                 "/home/emamaker/.platformio/packages/framework-arduinoteensy/libraries/ks0108",
                 "/home/emamaker/.platformio/packages/framework-arduinoteensy/libraries/ssd1351",
                 "/home/emamaker/.platformio/packages/framework-arduinoteensy/libraries/x10",
-                "/home/emamaker/.platformio/packages/tool-unity",
                 ""
             ],
             "browse": {
                 "limitSymbolsToIncludedHeaders": true,
                 "path": [
-                    "/home/emamaker/Teensy3.5DDS/Firmware/Teensy/include",
-                    "/home/emamaker/Teensy3.5DDS/Firmware/Teensy/src",
+                    "/home/emamaker/Documents/Projects/FunctionGenerator/FunctionGen-Teensy/Teensy3.5-DDS/Firmware/Teensy/include",
+                    "/home/emamaker/Documents/Projects/FunctionGenerator/FunctionGen-Teensy/Teensy3.5-DDS/Firmware/Teensy/src",
                     "/home/emamaker/.platformio/packages/framework-arduinoteensy/cores/teensy3",
                     "/home/emamaker/.platformio/packages/framework-arduinoteensy/libraries/ADC",
                     "/home/emamaker/.platformio/packages/framework-arduinoteensy/libraries/AccelStepper/src",
@@ -214,7 +213,6 @@
                     "/home/emamaker/.platformio/packages/framework-arduinoteensy/libraries/ks0108",
                     "/home/emamaker/.platformio/packages/framework-arduinoteensy/libraries/ssd1351",
                     "/home/emamaker/.platformio/packages/framework-arduinoteensy/libraries/x10",
-                    "/home/emamaker/.platformio/packages/tool-unity",
                     ""
                 ]
             },
