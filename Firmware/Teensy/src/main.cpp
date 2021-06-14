@@ -26,8 +26,6 @@ void loop() {
     Serial1.write(42);  //The answer to life, universe and everything else
     digitalWriteFast(LED_BUILTIN, HIGH);
 
-    Serial1.flush();
-
     delay(1000);
     receivingInfo = false;
     valid_flag = false;
@@ -58,6 +56,8 @@ void loop() {
       Serial.println(duty);
       Serial.print("Frequency: " );
       Serial.println(frequency);
+
+      Serial1.flush();
       
       digitalWriteFast(LED_BUILTIN, LOW);
       generate(type, frequency, duty);
