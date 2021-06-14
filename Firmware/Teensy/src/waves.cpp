@@ -24,6 +24,8 @@ void setupWaves(){
 	SIM_SCGC2 |= SIM_SCGC2_DAC1;
   DAC1_C0 = DAC_C0_DACEN | DAC_C0_DACRFS;
 
+  noSelect();
+
   //This one can be calculated only once
   calculateSineLookup();
 }
@@ -73,6 +75,11 @@ void selectDAC1(){
   digitalWriteFast(DAC1_SEL, HIGH);  
 }
 
+void noSelect(){
+  digitalWriteFast(DAC0_SEL, LOW);
+  digitalWriteFast(DAC1_SEL, LOW);  
+}
+
 //Write the DAC with using some parts of framework's Arduino.h, for higher speeds
 // Use FASTRUN to run code in RAM
 typedef int16_t __attribute__((__may_alias__)) aliased_int16_t;
@@ -107,7 +114,7 @@ FASTRUN void generateSine(float frequency){
 }
 
 FASTRUN void generateSquare(float frequency, int duty){
-    startGenerating();
+    selectDAC1();
     calculateSquareLookup(duty);
     generateWave(frequency, SQUARE_LUT, 1);
 }
