@@ -9,8 +9,8 @@
 #define TYPE_MIN 0
 #define TYPE_MAX 1
 
-#define INTERRUPT_ON TXLED1
-#define INTERRUPT_OFF TXLED0
+#define OFF_MEASURE A0
+#define AMPL_MEASURE A1
 
 #define DUTY_MIN 10
 #define DUTY_MAX 100
@@ -43,15 +43,13 @@ void setup() {
   pinMode(LED_BUILTIN, OUTPUT);
   pinMode(4, OUTPUT);
   
-  lcd.init();
+  /*lcd.init();
   lcd.backlight();
-
-  TXLED0;
 
   lcd.setCursor(0,0);
   lcd.print("Teensy 3.5 DDS");
   lcd.setCursor(0,1);
-  lcd.print("v1.0 by EmaMaker");
+  lcd.print("v1.0 by EmaMaker");*/
 
   delay(500);
 
@@ -188,8 +186,8 @@ void communicateChanges(){
       digitalWrite(4, b);
     }
   }
+  digitalWrite(4, LOW );
   
-  INTERRUPT_OFF;
   t1 = millis();
   /*How the communication protocol works:
   For simplicity, every information is send inside a string
@@ -231,6 +229,8 @@ boolean b = true;
 unsigned long t = 0;
 
 void drawInfoOnScreen(){
+  Voff = map(analogRead(OFF_MEASURE), 0, 1024, -12, +12);
+  Vpp = 2*map(analogRead(AMPL_MEASURE), 0, 1024, 0, 6);
 
   //Alternatevely, type and duty or frequency
   if(millis() - t > INFO_UPDATE_TIME) {
