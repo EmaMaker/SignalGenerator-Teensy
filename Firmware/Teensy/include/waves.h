@@ -38,6 +38,7 @@ void generateSine(float);
 void generateSquare(float, int);
 void generateWave(float, int*, int);
 
+void noSelect();
 void selectDAC0();
 void selectDAC1();
 
