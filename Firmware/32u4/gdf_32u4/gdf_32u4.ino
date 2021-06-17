@@ -12,8 +12,10 @@
 #define OFF_MEASURE A0
 #define AMPL_MEASURE A1
 
+#define AMPL_MAX 5
+
 #define DUTY_MIN 10
-#define DUTY_MAX 100
+#define DUTY_MAX 90
 
 #define MAX_ACHIEVABLE_FREQ 1000000
 #define FREQ_ARRAY_LEN 7
@@ -43,13 +45,13 @@ void setup() {
   pinMode(LED_BUILTIN, OUTPUT);
   pinMode(4, OUTPUT);
   
-  /*lcd.init();
+  lcd.init();
   lcd.backlight();
 
   lcd.setCursor(0,0);
   lcd.print("Teensy 3.5 DDS");
   lcd.setCursor(0,1);
-  lcd.print("v1.0 by EmaMaker");*/
+  lcd.print("v1.0 by EmaMaker");
 
   delay(500);
 
@@ -229,8 +231,8 @@ boolean b = true;
 unsigned long t = 0;
 
 void drawInfoOnScreen(){
-  Voff = map(analogRead(OFF_MEASURE), 0, 1024, -12, +12);
-  Vpp = 2*map(analogRead(AMPL_MEASURE), 0, 1024, 0, 6);
+  Voff = map_float(analogRead(OFF_MEASURE), 0, 1024, -12, 12);
+  Vpp = 2*map_float(analogRead(AMPL_MEASURE), 0, 1024, 0, AMPL_MAX) + 0.3; //account for drop on shottky
 
   //Alternatevely, type and duty or frequency
   if(millis() - t > INFO_UPDATE_TIME) {
@@ -249,7 +251,7 @@ void drawInfoOnScreen(){
   lcd.setCursor(9, 1);
   lcd.print("O:");
   lcd.print(String(Voff, 1));
-  lcd.print("V");
+  lcd.print("V     ");
   
   if(b){
     lcd.setCursor(0,0);
@@ -268,5 +270,9 @@ void drawInfoOnScreen(){
     lcd.print(frequency);
     lcd.print(" Hz");
   }
+}
+
+float map_float(float x, float in_min, float in_max, float out_min, float out_max) {
+  return (x - in_min) * (out_max - out_min) / (in_max - in_min) + out_min;
 }
 /*-------------*/
